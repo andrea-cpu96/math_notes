@@ -34,7 +34,7 @@ Mathematics is written with a small number of precise words. The four that appea
 \begin{definition}[Predicate] A \emph{predicate} $P(x)$, $P(x,y)$, \ldots{} is an assertion that contains one or more free variables. On its own it is neither true nor false: it becomes true or false only after the variables are specified, or after they are bound by a quantifier. \end{definition}
 Examples: \begin{align*} P(x) &\colon\quad x>0, \\ Q(x,y) &\colon\quad x^2+y^2=1, \\ R(n) &\colon\quad n\text{ is even}. \end{align*} $P(3)$ is true, $P(-1)$ is false. The expression $P(x)$ itself is not a statement.
 The usual quantifiers turn a predicate into a statement:
-\[ \forall x\in A,\ P(x) \qquad\text{and}\qquad \exists x\in A,\ P(x). \]
+\[\boxed{ \forall x\in A,\ P(x) \qquad\text{and}\qquad \exists x\in A,\ P(x). }\]
 The first is true when $P(x)$ holds for every $x\in A$; the second when it holds for at least one $x\in A$.
 \subsection{Statement}
 \begin{definition}[Statement] A \emph{statement} is a declarative sentence that is either true or false, and not both. It has no free variables. \end{definition}
@@ -42,14 +42,14 @@ Examples of statements: $2+2=4$ (true); $\sqrt{2}$ is rational (false); $\forall
 \subsection{Universal implication}
 Most statements in calculus are not a single implication $P\Rightarrow Q$, but an implication that is required to hold for every object of a given type.
 \begin{definition}[Universal implication] A \emph{universal implication} is a statement of the form
-\[ \forall x\in A,\quad P(x)\Rightarrow Q(x). \]
+\[\boxed{ \forall x\in A,\quad P(x)\Rightarrow Q(x). }\]
 $P(x)$ is the \emph{hypothesis} and $Q(x)$ is the \emph{conclusion}. It is read: for every $x\in A$, if $P(x)$ holds then $Q(x)$ holds. \end{definition}
 The universal implication is true when every $x\in A$ that satisfies the hypothesis also satisfies the conclusion. It is false if and only if there exists a \emph{counterexample}: an element $x_0\in A$ such that $P(x_0)$ is true and $Q(x_0)$ is false.
 To prove a universal implication one typically takes an arbitrary $x\in A$ with $P(x)$ and deduces $Q(x)$. To disprove it, it is enough to exhibit one counterexample.
 The converse is
-\[ \forall x\in A,\quad Q(x)\Rightarrow P(x). \]
+\[\boxed{ \forall x\in A,\quad Q(x)\Rightarrow P(x). }\]
 It is a different statement; it may be true or false independently of the original implication. If both hold, one writes
-\[ \forall x\in A,\quad P(x)\Leftrightarrow Q(x). \]
+\[\boxed{ \forall x\in A,\quad P(x)\Leftrightarrow Q(x). }\]
 Then $P$ is a \emph{necessary and sufficient} condition for $Q$.
 \subsection{Theorem}
 \begin{definition}[Theorem] A \emph{theorem} is a statement that has been proved to be true. In these notes a theorem is almost always a universal implication, or a chain of such implications. \end{definition}
@@ -60,10 +60,10 @@ The same kind of true statement may be labelled in a weaker or stronger way acco
 The standard pattern of a theorem in Calculus~1 is therefore: \begin{quote} \textbf{Theorem.} $\forall x\in A$, if $P(x)$ then $Q(x)$. \end{quote} followed by a \emph{proof}: a finite sequence of allowed deductions that starts from the hypothesis and ends at the conclusion.
 \subsection{Law of contrapositives}
 \begin{definition}[Law of contrapositives] The implication $P\Rightarrow Q$ is equivalent to its \emph{contrapositive} $\sim Q\Rightarrow \sim P$:
-\[ (P\Rightarrow Q)\quad\Leftrightarrow\quad (\sim Q\Rightarrow \sim P). \]
+\[\boxed{ (P\Rightarrow Q)\quad\Leftrightarrow\quad (\sim Q\Rightarrow \sim P). }\]
 The two statements are true together or false together. In particular they are not the converse $Q\Rightarrow P$. \end{definition}
 For a universal implication the same law reads
-\[ \bigl(\forall x\in A,\ P(x)\Rightarrow Q(x)\bigr) \quad\Leftrightarrow\quad \bigl(\forall x\in A,\ \sim Q(x)\Rightarrow \sim P(x)\bigr). \]
+\[\boxed{ \bigl(\forall x\in A,\ P(x)\Rightarrow Q(x)\bigr) \quad\Leftrightarrow\quad \bigl(\forall x\in A,\ \sim Q(x)\Rightarrow \sim P(x)\bigr). }\]
 Therefore, to prove that $P(x)$ implies $Q(x)$ for every $x\in A$, it is enough to prove that whenever $Q(x)$ fails, $P(x)$ fails as well: take an arbitrary $x\in A$ with $\sim Q(x)$ and deduce $\sim P(x)$.
 \subsection{Proof by contradiction}
 \begin{definition}[Proof by contradiction] To prove a statement $R$ \emph{by contradiction}, assume $\sim R$ and deduce from that assumption a false statement (a contradiction, typically of the form $S\land\sim S$). Then $\sim R$ cannot hold, so $R$ is true. \end{definition}
@@ -74,13 +74,13 @@ A \emph{geometric progression} (GP) is a sequence of real numbers
 \[ (a_n)_{n\ge 0} \]
 such that every term is obtained by multiplying the previous one by a fixed real number \(q\), called the \emph{ratio} of the progression.
 \begin{definition}[Geometric progression] A sequence \((a_n)\) is a geometric progression of ratio \(q\) if
-\[ a_{n+1} = q\,a_n \qquad \text{for all } n\ge 0. \]
+\[\boxed{ a_{n+1} = q\,a_n \qquad \text{for all } n\ge 0. }\]
 \end{definition}
 Starting from the initial term \(a_0\), the general term is
-\[ a_n = a_0\, q^n. \]
+\[\boxed{ a_n = a_0\, q^n. }\]
 \subsection*{Geometric sum}
 The basic geometric sum is
-\[ \sum_{k=0}^{n} q^k = \frac{1 - q^{\,n+1}}{1 - q} \qquad (q\neq 1). \]
+\[\boxed{ \sum_{k=0}^{n} q^k = \frac{1 - q^{\,n+1}}{1 - q} \qquad (q\neq 1). }\]
 When \(q=1\), every term equals \(1\) and
 \[ \sum_{k=0}^{n} 1 = n+1. \]
 From this, the sum of the first \(n+1\) terms of a geometric progression is
@@ -92,22 +92,22 @@ If \(q=1\), the progression is constant and
 \[ S_n = (n+1)a_0. \]
 \subsection*{Infinite geometric series}
 When \(|q|<1\), the geometric progression has a convergent infinite sum:
-\[ \sum_{n=0}^{\infty} a_n = \frac{a_0}{1-q}. \]
+\[\boxed{ \sum_{n=0}^{\infty} a_n = \frac{a_0}{1-q}. }\]
 If \(|q|\ge 1\), the infinite series diverges.
 \subsection*{Examples}
 \begin{equation*} \begin{aligned} a_n &= 3\cdot 2^n &&\text{GP with } a_0=3,\ q=2\\ a_n &= 5\left(\tfrac12\right)^n &&\text{GP with } a_0=5,\ q=\tfrac12 \end{aligned} \end{equation*}
 \section{Binomial coefficients and Newton's formula}
 \subsection*{Binomial coefficients}
 For every pair of integers $n\ge 0$ and $0\le k\le n$, the \emph{binomial coefficient} $\binom{n}{k}$ counts the number of ways to choose $k$ elements from a set of $n$ elements. It is defined by
-\[ \binom{n}{k} = \frac{n!}{k!\,(n-k)!}. \]
+\[\boxed{ \binom{n}{k} = \frac{n!}{k!\,(n-k)!}. }\]
 The binomial coefficients satisfy the symmetry identity
-\[ \binom{n}{k} = \binom{n}{n-k}, \]
+\[\boxed{ \binom{n}{k} = \binom{n}{n-k}, }\]
 and the recurrence relation
-\[ \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}, \]
+\[\boxed{ \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}, }\]
 which is the rule that generates Pascal's triangle.
 \subsection*{Newton's binomial formula}
 For every real numbers $x,y$ and every integer $n\ge 0$, the expansion of $(x+y)^n$ is given by the \emph{binomial formula}:
-\[ (x+y)^n = \sum_{k=0}^{n} \binom{n}{k}\, x^{n-k} y^{k}. \]
+\[\boxed{ (x+y)^n = \sum_{k=0}^{n} \binom{n}{k}\, x^{n-k} y^{k}. }\]
 Each term corresponds to choosing $k$ factors $y$ and $n-k$ factors $x$ in the product $(x+y)(x+y)\cdots(x+y)$ repeated $n$ times.
 \subsection*{Special cases}
 Setting $x=1$ gives the identity
@@ -217,12 +217,12 @@ In the ordered field $\mathbb{R}$, the absolute value of a real number $x$ is de
 The absolute value measures the distance of $x$ from $0$ on the real line.
 The fundamental estimate relating absolute values is the \emph{triangle inequality}.
 \begin{theorem}[Triangle inequality] For all real numbers $x,y\in\mathbb{R}$,
-\[ |x+y| \le |x| + |y|. \]
+\[\boxed{ |x+y| \le |x| + |y|. }\]
 \end{theorem}
 This inequality expresses that the distance from $0$ to $x+y$ is never greater than the sum of the distances from $0$ to $x$ and from $0$ to $y$.
 \subsection*{Reverse triangle inequality}
 A direct consequence of the triangle inequality is the \emph{reverse triangle inequality}:
-\[ \bigl|\,|x| - |y|\,\bigr| \le |x-y|. \]
+\[\boxed{ \bigl|\,|x| - |y|\,\bigr| \le |x-y|. }\]
 It states that the difference between the lengths $|x|$ and $|y|$ cannot exceed the length of their difference.
 \subsection*{Geometric interpretation}
 On the real line, $|x-y|$ represents the distance between $x$ and $y$.
@@ -300,7 +300,7 @@ z = 3\sqrt{2}\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right).
 For every complex number written in trigonometric form
 \[ z = |z|\bigl(\cos\theta + i\sin\theta\bigr), \]
 and for every integer $n\ge 1$, the powers of $z$ are given by \emph{De Moivre's formula}:
-\[ z^n = |z|^n\bigl(\cos(n\theta) + i\sin(n\theta)\bigr). \]
+\[\boxed{ z^n = |z|^n\bigl(\cos(n\theta) + i\sin(n\theta)\bigr). }\]
 This identity shows that raising a complex number to a power multiplies its argument by $n$ and raises its modulus to the $n$-th power.
 \subsection*{Roots}
 De Moivre's formula also provides the $n$-th roots of a nonzero complex number.
@@ -454,7 +454,7 @@ In this case one can define the \emph{inverse function} $f^{-1}$, which reverses
 The \emph{inverse function} of $f$ is the map
 \[ f^{-1} : f(A) \to A \]
 satisfying
-\[ f^{-1}(f(x)) = x \qquad \text{for all } x\in A. \]
+\[\boxed{ f^{-1}(f(x)) = x \qquad \text{for all } x\in A. }\]
 \end{definition}
 The graph of $f^{-1}$ is obtained by reflecting the graph of $f$ across the line $y=x$, called the \emph{bisector} of the first and third quadrants.
 \subsection*{Geometric representation}
@@ -761,7 +761,7 @@ Let $f$ be a real function defined on a subset of $\mathbb{R}$.
 As stated earlier, a function is a rule $f:A\to B$ that assigns to every $x\in A$ a unique real number $f(x)\in B$.
 The derivative describes how $f(x)$ changes when $x$ varies.
 \begin{definition}[Derivative] The \emph{derivative} of $f$ at a point $x_0$ is the limit
-\[ f'(x_0) = \lim_{h\to 0} \frac{f(x_0+h)-f(x_0)}{h}, \]
+\[\boxed{ f'(x_0) = \lim_{h\to 0} \frac{f(x_0+h)-f(x_0)}{h}, }\]
 if this limit exists. \end{definition}
 The quotient
 \[ \frac{f(x_0+h)-f(x_0)}{h} \]
@@ -816,15 +816,6 @@ Differentiability is a stronger property than continuity.
 A function may be continuous without being differentiable, but every differentiable function is necessarily continuous.
 \begin{theorem}[Differentiability implies continuity] Let $f$ be a function defined on an interval and let $x_0$ be a point in its domain.
 If $f$ is differentiable at $x_0$, then $f$ is continuous at $x_0$. \end{theorem}
-\begin{proof} If $f$ is differentiable at $x_0$, the limit
-\[ f'(x_0)=\lim_{h\to 0}\frac{f(x_0+h)-f(x_0)}{h} \]
-exists and is finite.
-Multiplying both sides by $h$ gives
-\[ f(x_0+h)-f(x_0)=h\,f'(x_0)+o(h), \]
-where $o(h)\to 0$ as $h\to 0$.
-Therefore,
-\[ \lim_{h\to 0}\bigl(f(x_0+h)-f(x_0)\bigr)=0, \]
-which is exactly the definition of continuity at $x_0$. \end{proof}
 \subsection*{Continuity without differentiability}
 The converse is false: continuity does not imply differentiability.
 A function may be continuous at a point but fail to have a derivative there.
@@ -848,13 +839,6 @@ Then the inverse function $f^{-1}$ is differentiable at $y_0 = f(x_0)$, and its 
 Equivalently, for every $x$ in the domain of $f$,
 \[ (f^{-1})'(f(x)) = \frac{1}{f'(x)}. \]
 \end{theorem}
-\begin{proof} Since $f$ is strictly monotonic, it admits an inverse $f^{-1}$.
-For $y$ near $y_0=f(x_0)$, write $y=f(x)$, so that $x=f^{-1}(y)$.
-Then
-\[ \frac{f^{-1}(y)-f^{-1}(y_0)}{y-y_0} = \frac{x-x_0}{f(x)-f(x_0)}. \]
-Taking the limit as $y\to y_0$ (equivalently $x\to x_0$) gives
-\[ (f^{-1})'(y_0) = \lim_{x\to x_0} \frac{x-x_0}{f(x)-f(x_0)} = \frac{1}{f'(x_0)}. \]
-\end{proof}
 \subsection*{Interpretation}
 The derivative of the inverse function is the reciprocal of the derivative of the original function.
 Geometrically, the graph of $f^{-1}$ is the reflection of the graph of $f$ across the line $y=x$, and the slope transforms by inversion:
@@ -871,16 +855,6 @@ Fermat's theorem gives a necessary condition for a local extremum when the deriv
 If $f$ has a local maximum or a local minimum at $x_0$ and $f$ is differentiable at $x_0$, then
 \[ f'(x_0) = 0. \]
 \end{theorem}
-\begin{proof} Assume $f$ has a local maximum at $x_0$.
-Then there exists a neighbourhood of $x_0$ such that
-\[ f(x) \le f(x_0) \qquad \text{for all } x \text{ near } x_0. \]
-For $h>0$ small,
-\[ \frac{f(x_0+h)-f(x_0)}{h} \le 0, \]
-and for $h<0$ small,
-\[ \frac{f(x_0+h)-f(x_0)}{h} \ge 0. \]
-Taking the limits as $h\to 0^+$ and $h\to 0^-$ shows that the right and left derivatives exist and are both equal to $0$.
-Thus $f'(x_0)=0$.
-The case of a local minimum is analogous. \end{proof}
 \subsection*{Consequences}
 \begin{itemize}
 \item If $f'(x_0)\neq 0$, then $f$ cannot have a local extremum at $x_0$.
@@ -902,15 +876,6 @@ It states that for every sufficiently regular function, there exists a point whe
 Then there exists at least one point $c\in(a,b)$ such that
 \[ f'(c) = \frac{f(b)-f(a)}{b-a}. \]
 \end{theorem}
-\begin{proof} Define the auxiliary function
-\[ g(x) = f(x) - \left( f(a) + \frac{f(b)-f(a)}{b-a}(x-a) \right). \]
-The function $g$ is continuous on $[a,b]$ and differentiable on $(a,b)$, and satisfies $g(a)=g(b)=0$.
-By Rolle's theorem, there exists $c\in(a,b)$ such that $g'(c)=0$.
-Computing the derivative,
-\[ g'(x) = f'(x) - \frac{f(b)-f(a)}{b-a}, \]
-so $g'(c)=0$ implies
-\[ f'(c) = \frac{f(b)-f(a)}{b-a}. \]
-\end{proof}
 \subsection*{Interpretation}
 The quantity
 \[ \frac{f(b)-f(a)}{b-a} \]
@@ -933,11 +898,6 @@ This result is known as the \emph{monotonicity test}.
 \item If $f'(x) > 0$ for all $x \in (a,b)$, then $f$ is strictly increasing on $[a,b]$.
 \item If $f'(x) < 0$ for all $x \in (a,b)$, then $f$ is strictly decreasing on $[a,b]$.
 \item If $f'(x) = 0$ for all $x \in (a,b)$, then $f$ is constant on $[a,b]$. \end{itemize} \end{theorem}
-\begin{proof} Assume $f'(x) > 0$ for all $x \in (a,b)$.
-For any $x_1, x_2 \in (a,b)$ with $x_1 < x_2$, the Mean Value Theorem gives a point $c \in (x_1, x_2)$ such that
-\[ f'(c) = \frac{f(x_2) - f(x_1)}{x_2 - x_1}. \]
-Since $f'(c) > 0$ and $x_2 - x_1 > 0$, we obtain $f(x_2) > f(x_1)$, proving that $f$ is strictly increasing.
-The decreasing and constant cases follow analogously. \end{proof}
 \subsection*{Interpretation}
 The sign of the derivative determines the behaviour of the function: \begin{itemize}
 \item Positive derivative $\Rightarrow$ the function rises.
@@ -1130,12 +1090,12 @@ The Taylor expansion expresses a function as a polynomial plus an error term tha
 The Peano remainder gives a very compact way to describe this error.
 \begin{theorem}[Taylor formula with Peano remainder] Let $f$ be a real function that is $n$ times differentiable at a point $x_0$.
 Then, as $x \to x_0$,
-\[ f(x) = f(x_0)
+\[\boxed{ f(x) = f(x_0)
 + f'(x_0)(x - x_0)
 + \frac{f''(x_0)}{2!}(x - x_0)^2
 + \cdots
 + \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n
-+ o\!\left((x - x_0)^n\right). \]
++ o\!\left((x - x_0)^n\right). }\]
 If $x_0 = 0$, this becomes the Maclaurin expansion:
 \[ f(x) = f(0)
 + f'(0)x
@@ -1234,14 +1194,6 @@ The absolute value $|R_N|$ is the \emph{error} made when the sum $S$ of the whol
 \end{theorem}
 The remainder measures what is left of the sum after the first $N+1$ terms.
 The theorem states that, for a convergent series, this leftover becomes arbitrarily small.
-\begin{proof} Since the series converges, the partial sums converge to the sum:
-\[ \lim_{N\to\infty} S_N = S. \]
-By the definition of the remainder, $R_N = S - S_N$.
-Passing to the limit,
-\[ \lim_{N\to\infty} R_N
-= \lim_{N\to\infty} (S - S_N)
-= S - S = 0. \]
-Therefore $\lim_{N\to\infty} R_N = 0$. \end{proof}
 From the identity $S = S_N + R_N$, the sum of a convergent series can be written as a partial sum plus a remainder:
 \[ \sum_{n=0}^{\infty} a_n = \sum_{n=0}^{N} a_n + \sum_{n=N+1}^{\infty} a_n. \]
 In particular, this relation is often used to estimate the error of numerical approximations of the sum of a series.
@@ -1342,15 +1294,6 @@ Moreover,
 \[ \left|\sum_{n=0}^{\infty} a_n\right| \le \sum_{n=0}^{\infty} |a_n|. \]
 \end{theorem}
 The usefulness for series with varying signs is immediate: instead of studying the sign behaviour of $a_n$, one studies the series of $|a_n|$, whose terms are non-negative and therefore fall under the criteria of \S 13.5.
-\begin{proof} For every $n$, the terms $a_n + |a_n|$ satisfy
-\[ 0 \le a_n + |a_n| \le 2\,|a_n|. \]
-Since $\sum |a_n|$ converges, by the direct comparison test the series $\sum (a_n+|a_n|)$ converges.
-Then
-\[ a_n = (a_n + |a_n|) - |a_n|, \]
-so $\sum a_n$ is the difference of two convergent series, hence it converges.
-For the inequality, apply the triangle inequality to the partial sums and take the limit:
-\[ \left|\sum_{n=0}^{N} a_n\right| \le \sum_{n=0}^{N} |a_n|, \]
-and passing to the limit as $N\to\infty$ gives the stated bound. \end{proof}
 A classical example of conditional convergence is the alternating harmonic series
 \[ \sum_{n=1}^{\infty} \frac{(-1)^n}{n}, \]
 which converges (by Leibniz's criterion) but does not converge absolutely, since $\sum 1/n$ diverges.
@@ -1955,9 +1898,11 @@ the equilibrium, diverge to infinity, or oscillate, according to the values
 of $q$ and $b$. Linear models include the growth of a capital under
 compound interest, $M_{n+1} = (1+i)\,M_n$, which is a geometric progression
 in the sense of \S 2, and the classical supply--demand adjustment of a
-market. The rest of this section develops these elementary cases first, and
-then introduces the notions -- equilibrium, stability, qualitative
-behaviour of the orbits -- that are needed for general first-order models.
+market. The rest of this section presents the models first -- Malthus,
+logistic, accelerator -- and closes with the general notions on
+difference equations: order, solution, initial values, classification,
+linear equations, the graphical study of the autonomous non-linear
+equations, and the stability of the equilibria.
 
 \subsection {The Malthus model}
 
@@ -2048,158 +1993,429 @@ the size of the population.
 
 \subsection{The logistic model}
 
-The Malthus model assumes that the growth rate is constant in time, so
-that the population can grow without bound. Over long horizons this is
-unrealistic: resources are finite, and the larger the population, the
-harder it is for each individual to find food and space. The simplest
-correction is to let the growth rate depend on the size of the population,
-decreasing as the population grows and vanishing when the population
-reaches the largest size that the environment can sustain, called the
-\emph{carrying capacity}.
+The Malthus model assumes a constant growth rate and therefore predicts
+unbounded growth. The simplest correction is to let the growth rate
+depend on the size of the population, decreasing as the population grows
+and vanishing when the population reaches the \emph{carrying capacity}
+$K$, the largest population that the environment can sustain.
 
-\begin{definition}[Logistic model] Let $r>0$ and $K>0$ be constants: $r$
-is the \emph{unlimited growth rate}, the rate at which the population
-would grow under Malthusian conditions, and $K$ is the \emph{carrying
-capacity} of the environment. The \emph{logistic model} is the discrete
-dynamical model whose evolution law is
+\begin{definition}[Logistic model] Let $r>0$ and $K>0$. The \emph{logistic
+model} is the discrete dynamical model whose evolution law is
 \[ P_{n+1} = P_n + r\,P_n\Bigl(1-\frac{P_n}{K}\Bigr). \]
-The increment of one period is $r\,P_n\bigl(1-P_n/K\bigr)$: it is the
-Malthusian increment $r\,P_n$ corrected by the factor $1-P_n/K$, which
-equals $1$ for a vanishing population and decreases to $0$ as $P_n$
-approaches $K$. Equivalently, the per-capita growth rate
-\[ \frac{P_{n+1}-P_n}{P_n} = r\Bigl(1-\frac{P_n}{K}\Bigr) \]
-is an affine, decreasing function of the present population: it takes the
-value $r$ when the population is close to $0$ and the value $0$ at the
-carrying capacity. As in the Malthus model, the law is meaningful only
-when the resulting factor is positive: since
-$P_{n+1} = P_n\bigl(1+r(1-P_n/K)\bigr)$, this requires
-$P_n < K\,(1+r)/r$; a population beyond this bound would change sign at
-the next period, which has no interpretation. \end{definition}
+The Malthusian increment $r\,P_n$ is corrected by the factor $1-P_n/K$:
+the per-capita growth rate $r\,(1-P_n/K)$ takes the value $r$ for a
+vanishing population and the value $0$ at the carrying capacity.
+\end{definition}
 
-\subsection*{Equilibria}
+The equilibria are $P^*=0$ and $P^*=K$. The increment
+$P_{n+1}-P_n = r\,P_n(1-P_n/K)$ is positive below $K$ and negative above
+it, so the population always moves towards the carrying capacity. For
+$0<r\le 1$ and $0<P_0<K$ the sequence is increasing and bounded above by
+$K$, hence convergent (\S 11). Passing to the limit in the evolution law
+gives $r\,L\,(1-L/K)=0$, and since $r>0$ and $L\ge P_0>0$ the limit is
+$L=K$: the carrying capacity is the stable equilibrium of the model.
 
-\begin{theorem}[Equilibria of the logistic model] The equilibria of the
-logistic model are $P^*=0$ and $P^*=K$.
-\end{theorem}
-
-\begin{proof} An equilibrium is a solution of $P^*=f(P^*)$, where
-$f(P)=P+r\,P\bigl(1-P/K\bigr)$ is the evolution law. Substituting the law
-gives
-\[ P^* = P^* + r\,P^*\Bigl(1-\frac{P^*}{K}\Bigr)
-   \qquad\Longleftrightarrow\qquad
-   r\,P^*\Bigl(1-\frac{P^*}{K}\Bigr) = 0, \]
-and since $r>0$ the last equation holds exactly when $P^*=0$ or
-$P^*=K$. \end{proof}
-
-The two equilibria are the stationary solutions of the model: a population
-that starts at $0$ remains extinct, and a population that starts exactly
-at the carrying capacity remains there for every $n$. The equilibrium
-$P^*=K$ describes a population saturated at the maximum size that the
-environment can support; the analysis of the orbits shows that it is the
-one towards which the model tends.
-
-\subsection*{Qualitative behaviour}
-
-Unlike the Malthus model, the logistic model admits no closed-form
-solution: $P_n$ is obtained by iterating a quadratic function, and no
-simple formula expresses $P_n$ in terms of $n$ and $P_0$. The study of
-the model is therefore qualitative, and it rests on the sign of the
-increment $P_{n+1}-P_n = r\,P_n\bigl(1-P_n/K\bigr)$. For a positive
-initial value:
-\begin{itemize}
-\item if $0<P_n<K$, the increment is positive: the population increases;
-\item if $P_n=K$, the increment is zero: the population stays at the
-equilibrium;
-\item if $P_n>K$, the increment is negative: the population decreases.
-\end{itemize}
-In either case the next population lies on the side of $K$ towards which
-the increment points: below the carrying capacity the population grows,
-above it the population declines. Moreover, the increment is largest when
-$P_n=K/2$: as a function of $P_n$, the quantity $r\,P_n(1-P_n/K)$ is a
-second-degree function with negative leading coefficient, whose maximum
-$rK/4$ is attained at $P_n=K/2$. The population grows fastest, in
-absolute terms, when it is half of the carrying capacity.
-
-For small values of the growth rate the approach to the equilibrium is
-monotone.
-
-\begin{theorem}[Convergence to the carrying capacity] If $0<r\le 1$ and
-$0<P_0\le K$, then the orbit of the logistic model is non-decreasing and
-converges to $K$.
-\end{theorem}
-
-\begin{proof} If $P_0=K$ the orbit is constant, so assume $0<P_0<K$. We
-prove by induction that $0<P_n<K$ for every $n$ and that the sequence is
-strictly increasing. Suppose $0<P_n<K$ and write $x_n=P_n/K\in(0,1)$. The
-increment is positive,
-\[ P_{n+1}-P_n = r\,P_n\,(1-x_n) > 0, \]
-so $P_{n+1}>P_n>0$. For the upper bound, a direct computation gives
-\[ P_{n+1}-K = K\,(1-x_n)(r\,x_n-1) < 0, \]
-because $1-x_n>0$ and, since $r\le 1$, also $r\,x_n<1$. Hence
-$P_n<P_{n+1}<K$, which completes the induction: the sequence $(P_n)$ is
-strictly increasing and bounded above by $K$, so it converges to a limit
-$L$ with $P_0\le L\le K$; in particular $L>0$. The evolution law has the
-form $P_{n+1}=f(P_n)$ with $f(P)=P+r\,P(1-P/K)$, a polynomial, which is
-continuous (\S 11); therefore $f(P_n)\to f(L)$, while $f(P_n)=P_{n+1}\to
-L$ as well, so $L=f(L)$, that is
-\[ r\,L\Bigl(1-\frac{L}{K}\Bigr)=0. \]
-Since $r>0$ and $L>0$, the only possibility is $L=K$. \end{proof}
-
-For larger values of the rate the orbits may overshoot the carrying
-capacity and approach it by oscillations. The mechanism is visible if one
-subtracts $K$ from both sides of the evolution law: writing $e_n=P_n-K$
-for the error with respect to the equilibrium, a direct computation gives
+For $1<r<2$ the orbit still converges to $K$, but by damped
+oscillations: subtracting $K$ from both sides of the evolution law gives
 the exact identity
-\[ e_{n+1} = (1-r)\,e_n - \frac{r}{K}\,e_n^2. \]
-When the orbit is close to $K$ the quadratic term is small, and the error
-is multiplied at each period by a factor close to $1-r$. Hence:
+\[ P_{n+1}-K = (1-r)\,(P_n-K) - \frac{r}{K}\,(P_n-K)^2, \]
+so near the equilibrium the error is multiplied by a factor close to
+$1-r$, which is negative when $r>1$. For $r>2$ the equilibrium is
+unstable: the orbit settles on periodic cycles and, as $r$ grows, its
+behaviour becomes aperiodic and sensitive to the initial value
+(\emph{chaos}). Unlike the Malthus model, the iterates of a quadratic
+function admit no closed formula, so the study of the model is
+qualitative.
+
+The logistic model, introduced by Verhulst in 1838, is the standard
+model of \emph{constrained growth}: it predicts convergence towards the
+carrying capacity instead of unbounded exponential growth, and it is the
+simplest example in which a single evolution law produces qualitatively
+different long-run behaviours as the parameter $r$ varies.
+
+\subsection{The accelerator model}
+
+The discrete models of this section apply to economic quantities as
+well. The \emph{accelerator model} (or \emph{multiplier--accelerator
+model}) describes the national income $Y_n$ of an economy observed year
+by year, and rests on two assumptions: consumption is proportional to
+the income of the previous period, and investment is proportional to the
+increase in consumption from one period to the next -- the
+\emph{acceleration principle}, according to which firms invest in order
+to expand capacity when demand grows.
+
+\begin{definition}[Accelerator model] Let $a>0$ be the autonomous demand,
+let $b$ with $0<b<1$ be the \emph{marginal propensity to consume}, and let
+$v>0$ be the \emph{acceleration coefficient}. The model is described by
+\[ Y_{n+1} = C_{n+1} + I_{n+1}, \qquad
+   C_{n+1} = a + b\,Y_n, \qquad
+   I_{n+1} = v\,(C_{n+1}-C_n), \]
+where $Y_n$, $C_n$, $I_n$ are income, consumption and investment of
+period $n$: the income of each period equals consumption plus investment,
+consumption depends on the income of the previous period, and investment
+follows the acceleration principle. Substituting the last two relations
+into the first one gives
+\[ Y_{n+1} = a + b\,(1+v)\,Y_n - b\,v\,Y_{n-1}, \]
+a linear equation of the \emph{second order}: each income is determined
+by the two preceding ones, and the pair $(Y_0,Y_1)$ determines the whole
+evolution. \end{definition}
+
+The constant sequence $Y^*=a/(1-b)$ is a solution: the income of the
+equilibrium is the autonomous demand multiplied by $1/(1-b)$, the
+\emph{multiplier} of Keynesian economics. The deviations
+$y_n = Y_n - Y^*$ satisfy the homogeneous equation
+\[ y_{n+1} = b\,(1+v)\,y_n - b\,v\,y_{n-1}, \]
+so the study of the model reduces to the homogeneous equation, which is
+solved by the method of the characteristic equation (described in
+general in the last subsection of this section): looking for
+solutions of the form $y_n=\lambda^n$ and dividing by $\lambda^n$ gives
+\[ \lambda^2 = b\,(1+v)\,\lambda - b\,v. \]
+Its roots have product $b\,v$ and sum $b\,(1+v)$, both positive, and
+their position decides the behaviour of the income:
 \begin{itemize}
-\item if $0<r<1$, then $0<1-r<1$: the error keeps its sign and decreases
-in magnitude, and the orbit converges to $K$ monotonically, as in the
-theorem;
-\item if $1<r<2$, then $-1<1-r<0$: the error changes sign at every period
-and decreases in magnitude, and the orbit approaches $K$ by damped
-oscillations; it can be proved that the orbit still converges to $K$ for
-every initial value $0<P_0<K(1+r)/r$, the range in which the model is
-meaningful;
-\item if $r>2$, then $|1-r|>1$: small errors are amplified at every
-period, the equilibrium $K$ is unstable, and a typical orbit does not
-approach it.
+\item if $b\,(1+v)^2 \ge 4v$, the roots are real and positive, and since
+$b<1$ they lie on the same side of $1$: if $b\,(1+v)<2$, both roots are
+smaller than $1$ and $Y_n\to Y^*$; if $b\,(1+v)>2$, both roots are
+larger than $1$ and the income grows without bound, without oscillating;
+\item if $b\,(1+v)^2 < 4v$, the roots are complex conjugates with common
+modulus $\rho=\sqrt{b\,v}$ (\S 8), and the income oscillates around the
+equilibrium with amplitude proportional to $\rho^n$: the oscillations are
+damped if $b\,v<1$, explosive if $b\,v>1$, and of constant amplitude in
+the borderline case $b\,v=1$.
 \end{itemize}
-For $r>2$ the quadratic correction prevents the orbit from escaping to
-infinity and new phenomena appear: for a first range of values of $r$ the
-orbit settles on a periodic cycle of period $2$; as $r$ increases, cycles
-of period $4$, $8$, $16$, \ldots{} succeed one another, and beyond a
-limit value of $r$ the behaviour becomes aperiodic and extremely
-sensitive to the initial value, a phenomenon known as \emph{chaos}. The
-logistic model is the simplest model in which this transition can be
-observed.
+The model shows how a simple economic mechanism generates cycles: for a
+wide range of the parameters the national income oscillates around its
+equilibrium, and the fluctuations die out or explode according to the
+product $b\,v$ of the two coefficients.
+
+\subsection{Generalities on difference equations}
+
+The evolution law of the introduction, $x_{n+1}=f(x_n)$, is the simplest
+instance of a \emph{difference equation}. In general, a difference
+equation of \emph{order} $k\ge 1$ is a relation of the form
+\[ x_{n+k} = F(n,\,x_n,\,x_{n+1},\,\ldots,\,x_{n+k-1}), \qquad n\ge 0, \]
+which determines each term of a sequence from the $k$ terms that precede
+it, and a \emph{solution} of the equation is a sequence $(x_n)$ that
+satisfies the relation for every $n\ge 0$. The first-order equations
+of the previous subsections are the case $k=1$.
+
+The solution is determined by the initial values: once the first $k$ terms
+$x_0,x_1,\ldots,x_{k-1}$ are assigned, the relation produces $x_k$, then
+$x_{k+1}$, and so on; by induction, one and only one solution corresponds
+to every choice of the initial values. For $k=1$ this is the iteration
+described in the introduction: the orbit of an initial state is the
+solution that it determines. An equation of order $k$ thus requires $k$
+initial values.
+
+Difference equations are classified according to the form of the function
+$F$:
+\begin{itemize}
+\item the equation is \emph{autonomous} if $F$ does not depend explicitly
+on $n$, and \emph{non-autonomous} otherwise; the models of this section
+are autonomous;
+\item it is \emph{linear} if $F$ is an affine function of the state
+variables, that is, if it has the form
+\[ x_{n+k} = a_1\,x_{n+k-1} + a_2\,x_{n+k-2} + \ldots + a_k\,x_n + b, \]
+and \emph{non-linear} otherwise: the Malthus and accelerator models are
+linear, the logistic model is not;
+\item a linear equation has \emph{constant coefficients} if the numbers
+$a_1,\ldots,a_k$ do not depend on $n$, and it is \emph{homogeneous} if
+$b=0$, \emph{non-homogeneous} otherwise.
+\end{itemize}
+For linear equations the \emph{superposition principle} holds: the sum of
+a particular solution and of a solution of the associated homogeneous
+equation is again a solution, and every solution is obtained in this way,
+as the general solution of the equation.
+
+The fundamental case is the linear first-order equation with constant
+coefficients, the affine law of the introduction; it is treated in detail
+in the next subsection, and the second-order case in the last subsection
+of this section.
+
+\subsection{Linear first-order equations with constant coefficients}
+
+The linear first-order equation with constant coefficients is
+\[ x_{n+1} = q\,x_n + b, \qquad q, b \in \mathbb{R}, \]
+the affine law introduced at the beginning of this section. Its solution
+is found by combining two particular solutions, according to the
+superposition principle. The associated \emph{homogeneous equation}
+\[ x_{n+1} = q\,x_n \]
+is solved by the geometric progressions (\S 2): $x_n=q^n\,x_0$. A constant
+solution of the complete equation exists when $q\neq 1$: it is the
+equilibrium of the equation,
+\[ x^* = \frac{b}{1-q}, \]
+the state that reproduces itself for ever.
+
+\begin{theorem}[Solution of the first-order linear equation] If $q\neq 1$,
+the solution of the equation with initial value $x_0$ is
+\[ x_n = x^* + q^n\,(x_0-x^*), \qquad x^* = \frac{b}{1-q}: \]
+the general solution is the sum of the equilibrium and of a geometric
+progression of ratio $q$. If $q=1$, the equation is $x_{n+1}=x_n+b$ and
+the solution is the arithmetic progression
+\[ x_n = x_0 + n\,b. \]
+\end{theorem}
+
+\begin{proof} For $q\neq 1$, the constant sequence $x^*=b/(1-q)$ is a
+solution, because $q\,x^*+b=x^*$; the difference $y_n=x_n-x^*$ then
+satisfies the homogeneous equation $y_{n+1}=q\,y_n$, whose solutions are
+the geometric progressions of ratio $q$ (\S 2): $y_n=q^n\,y_0$. For $q=1$
+the equation reads $x_{n+1}-x_n=b$, and induction (\S 7) gives
+$x_n=x_0+n\,b$. \end{proof}
+
+The long-run behaviour follows from the theory of sequences (\S 11). If
+$|q|<1$, then $q^n\to 0$ and every solution converges to the equilibrium
+$x^*$: monotonically for $0<q<1$, with alternating sign for $-1<q<0$; the
+equilibrium is stable. If $|q|>1$, every solution with $x_0\neq x^*$ is
+unbounded -- monotonically for $q>1$, with alternating sign for $q<-1$ --
+and the equilibrium is unstable. If $q=1$ and $b\neq 0$, the solution
+diverges linearly. The Malthus model is the special case $b=0$, $q=1+r$:
+its solutions are the geometric progressions of \S 2.
 
 \subsection*{Example}
 
-Let $K=1000$ and $P_0=100$. With the moderate rate $r=0.5$ the first
-iterates, rounded to integers, are
-\[ P_1=145,\quad P_2=207,\quad P_3=289,\quad P_4=392,\quad P_5=511,\quad P_6=636, \]
-and the sequence increases towards the carrying capacity, in agreement
-with the theorem. With the larger rate $r=1.9$ the first iterates are
-\[ P_1=271,\quad P_2=646,\quad P_3=1081,\quad P_4=915,\quad P_5=1063,\quad P_6=936, \]
-the orbit overshoots the carrying capacity and then oscillates around it
-with decreasing amplitude: this is the damped oscillation described
-above.
+A capital $M_n$ is invested at the interest rate $i>0$ and increased each
+year by a deposit $d>0$. Its evolution is the first-order linear equation
+\[ M_{n+1} = (1+i)\,M_n + d, \]
+with $q=1+i\neq 1$ and $b=d$. The formula of the theorem gives
+\[ M_n = (1+i)^n\,M_0 + d\,\frac{(1+i)^n-1}{i}: \]
+the capital grows by compound interest, and the deposits accumulate at
+compound interest as well. The equilibrium $x^*=-d/i$ is negative, so it
+has no economic meaning, and every capital diverges to $+\infty$.
 
-\subsection*{Meaning}
+\subsection{Autonomous non-linear equations}
 
-The logistic model is the mathematical expression of \emph{constrained
-growth}: each period reproduces the Malthusian increment corrected by the
-factor $1-P_n/K$, which measures how close the population is to
-saturation. The long-run prediction is no longer unbounded exponential
-growth, as in the Malthus model, but convergence towards the carrying
-capacity, in agreement with the observation that real populations tend to
-stabilize. The model was introduced by Verhulst in 1838 and is used today
-in ecology, in demography and in economics. Its main theoretical interest
-is that a single, fixed evolution law produces qualitatively different
-long-run behaviours as the parameter $r$ varies -- monotone convergence,
-damped oscillations, periodic cycles, chaos -- and this makes it the
-prototype of non-linear discrete dynamical models.
+The general first-order autonomous equation has the form
+\[ x_{n+1} = f(x_n), \qquad n = 0, 1, 2, \ldots \]
+with $f$ continuous: the equation is \emph{autonomous} because $f$ does
+not depend explicitly on $n$, and \emph{non-linear} when $f$ is not
+affine. The linear equations of the previous subsection are the affine
+case; the logistic model is the typical non-linear instance. For a
+general $f$ no formula gives $x_n$, and the study is \emph{qualitative}:
+it does not compute the solution explicitly, but describes the behaviour
+of the orbits from the shape of the graph of $f$.
+
+The orbit of $x_0$ is the sequence of the \emph{iterates} of $f$: one
+defines $f^0$ as the identity, $f^1 = f$, and in general
+$f^{n+1} = f\circ f^n$, so that
+\[ x_n = f^n(x_0), \qquad n \ge 0. \]
+The iterates are not powers: $f^2(x) = f(f(x))$ is the second iterate,
+the result of applying the evolution law twice. The orbit records the
+states visited by the system starting from $x_0$.
+
+The states that reproduce themselves are the \emph{fixed points} of $f$:
+\[ f(x^*) = x^*. \]
+A fixed point is exactly an equilibrium of the equation, in the sense of
+the introduction: the constant sequence $x_n = x^*$ is a solution, the
+stationary solution. Geometrically, the fixed points are the
+intersections of the graph of $f$ with the bisector of the first and
+third quadrants, the line $y=x$: solving the equation
+\[ f(x) = x \]
+produces them all.
+
+The \emph{staircase diagram} makes the orbit visible. In the plane one
+draws the graph of $f$ and the bisector $y=x$, and starting from $x_0$ on
+the horizontal axis one alternates two moves: vertically, until the graph
+of $f$, which reads the value $x_1 = f(x_0)$; horizontally, until the
+bisector, which transfers the value to the axis. Repeating the two moves
+produces a polygonal line -- the \emph{staircase} -- whose steps have
+abscissas $x_0, x_1, x_2, \ldots$: the diagram displays the whole orbit,
+and its long-run behaviour is read at a glance.
+
+The diagram shows immediately how the orbit moves. Where the graph of
+$f$ lies above the bisector one has $f(x)>x$, and the orbit increases;
+where the graph lies below, the orbit decreases. If $f$ is increasing in
+an interval that contains the orbit, the orbit is monotone: indeed
+$x_1>x_0$ implies $x_2=f(x_1)\ge f(x_0)=x_1$, and by induction the
+sequence is increasing (similarly for $x_1<x_0$). Hence, if the orbit
+remains in a bounded interval, it converges (\S 11), and its limit is a
+fixed point:
+
+\begin{theorem}[Limit of a convergent orbit] Let $f$ be continuous and
+let the orbit of $x_0$ converge to a real number $L$. Then $L$ is a fixed
+point: $f(L)=L$.
+\end{theorem}
+
+\begin{proof} The sequence $(x_{n+1})$ has the same limit $L$ as $(x_n)$.
+Since $f$ is continuous (\S 11), $f(x_n)\to f(L)$; but $f(x_n)=x_{n+1}\to
+L$, and the uniqueness of the limit (\S 11) gives $L=f(L)$. \end{proof}
+
+If $f$ is decreasing in an interval containing the orbit, the orbit
+oscillates: the terms $x_0, x_2, x_4, \ldots$ of even index and the terms
+$x_1, x_3, \ldots$ of odd index move on opposite sides, since the
+composite $f\circ f$ is increasing. In the staircase diagram the
+polygonal line winds around the fixed point in a spiral -- the diagram is
+then called a \emph{cobweb} -- and the orbit converges to the fixed point
+when the spiral narrows, and abandons it when the spiral widens. The
+staircase diagram thus reproduces the phenomena met in the models of
+this section: for the logistic model with $0<r\le 1$ the steps climb
+monotonically towards the carrying capacity, while for larger rates they
+wind around it.
+
+\subsection{Linear second-order equations with constant coefficients}
+
+The linear second-order equation with constant coefficients is
+\[ x_{n+2} = a\,x_{n+1} + c\,x_n, \qquad a, c \in \mathbb{R}, \]
+with $c\neq 0$, so that the equation is genuinely of the second order:
+each state is determined by the two preceding ones, and the pair
+$x_0,x_1$ determines one and only one solution. The equation is
+\emph{homogeneous}: no term independent of the state appears. The
+multiplier--accelerator model leads to an equation of this type.
+
+As for every linear equation, the \emph{superposition principle} holds:
+the multiples of a solution and the sums of two solutions are again
+solutions. Two solutions that are not proportional generate all the
+others by linear combination,
+\[ x_n = c_1\,x^{(1)}_n + c_2\,x^{(2)}_n, \]
+and the solutions are found with the method of the \emph{characteristic
+equation}: one looks for solutions of the form $x_n=\lambda^n$, with
+$\lambda\neq 0$; substituting and dividing by $\lambda^n$ gives
+\[ \lambda^2 = a\,\lambda + c. \]
+The roots are real and distinct when $a^2+4c>0$, coincident when
+$a^2+4c=0$, complex conjugates when $a^2+4c<0$: the three cases give the
+three forms of the general solution.
+
+\begin{theorem}[Distinct real roots] Suppose that the characteristic
+equation has two distinct real roots $\lambda_1\neq\lambda_2$. Then the
+general solution of the homogeneous equation is
+\[ x_n = c_1\,\lambda_1^n+c_2\,\lambda_2^n, \]
+and every choice of the initial values $x_0,x_1$ determines the
+constants $c_1$ and $c_2$.
+\end{theorem}
+
+\begin{proof} The sequences $\lambda_1^n$ and $\lambda_2^n$ are
+solutions, since the characteristic equation gives
+$\lambda_i^{n+2}=a\,\lambda_i^{n+1}+c\,\lambda_i^n$; their linear
+combinations are solutions by the superposition principle. Conversely,
+let $(x_n)$ be a solution and choose $c_1,c_2$ with $c_1+c_2=x_0$ and
+$c_1\lambda_1+c_2\lambda_2=x_1$, which is possible because the
+determinant of the system is $\lambda_2-\lambda_1\neq 0$. The sequence
+$c_1\lambda_1^n+c_2\lambda_2^n$ is a solution with the same first two
+values as $(x_n)$, and the recursion determines all the others: the two
+solutions coincide. \end{proof}
+
+\begin{theorem}[Double root] Suppose that the characteristic equation has
+one double root $\lambda$. Then the general solution is
+\[ x_n = (c_1+c_2\,n)\,\lambda^n. \]
+\end{theorem}
+
+\begin{proof} For a double root the coefficients satisfy $a=2\lambda$ and
+$c=-\lambda^2$, since the characteristic polynomial $t^2-a\,t-c$ equals
+$(t-\lambda)^2$. The sequence $\lambda^n$ is a solution, and the
+sequence $n\,\lambda^n$ is a solution too: substituting $x_n=n\,\lambda^n$
+and using $a=2\lambda$, $c=-\lambda^2$, both sides of the equation reduce
+to
+\[ (n+2)\,\lambda^{n+2}. \]
+The two solutions are not proportional, and their linear combinations
+give all the solutions, by the argument of the previous proof.
+\end{proof}
+
+\begin{theorem}[Complex conjugate roots] Suppose that the characteristic
+equation has no real roots, and let its roots be the complex conjugates
+$\lambda=\rho(\cos\theta\pm i\sin\theta)$, with $\rho>0$ (\S 8). Then the
+real solutions are the linear combinations of
+\[ \rho^n\cos(n\theta) \qquad\text{and}\qquad \rho^n\sin(n\theta), \]
+and the orbits oscillate with amplitude proportional to $\rho^n$: damped
+if $\rho<1$, of constant amplitude if $\rho=1$, explosive if $\rho>1$.
+\end{theorem}
+
+The result follows from De Moivre's formula (\S 8), which gives
+$\lambda^n=\rho^n(\cos n\theta+i\sin n\theta)$: the real and imaginary
+parts of the complex solution $\lambda^n$ are real solutions of the
+equation, since the coefficients are real.
+
+The behaviour of the orbits is read from the roots. If both roots have
+modulus smaller than $1$, every solution converges to $0$: each term
+$\lambda_i^n$, or the amplitude $\rho^n$, tends to $0$ (\S 11). If a root
+has modulus larger than $1$, the solutions with a nonzero coefficient
+along it are unbounded. The oscillations appear only in the complex
+case, where the sign of the terms changes periodically. Finally, in the
+non-homogeneous case, when a constant term is added to the right-hand
+side, a constant solution exists whenever $1$ is not a root of the
+characteristic equation, and by the superposition principle the
+deviations from it satisfy the homogeneous equation: this is what
+happens in the accelerator model, where the deviations of the income
+from its equilibrium are governed by the homogeneous equation studied
+here.
+
+\subsection{Stability of the equilibria}
+
+The qualitative analysis of the previous subsections asks a natural
+question: when does an equilibrium attract the nearby orbits, and when
+does it repel them? The linear equations answer in terms of the ratio
+$q$, the graphical analysis in terms of the position of the graph; this
+subsection collects the general notions.
+
+\begin{definition}[Stability of an equilibrium] Let $x^*$ be an
+equilibrium of the autonomous equation $x_{n+1}=f(x_n)$. The equilibrium
+is \emph{stable} if every orbit that starts sufficiently close to $x^*$
+remains close to it for ever: for every neighbourhood $U$ of $x^*$ there
+exists a neighbourhood $V$ of $x^*$ such that, if $x_0\in V$, then
+$x_n\in U$ for every $n\ge 0$. It is \emph{asymptotically stable} if it
+is stable and, in addition, every orbit that starts sufficiently close
+converges to $x^*$. An equilibrium that is not stable is \emph{unstable}.
+\end{definition}
+
+For the linear equation of the previous subsections the criterion is
+exact: the error $e_n=x_n-x^*$ from the equilibrium satisfies
+$e_{n+1}=q\,e_n$, so $e_n=q^n(x_0-x^*)$, and the equilibrium is
+asymptotically stable for $|q|<1$ and unstable for $|q|>1$. The border
+cases are delicate: for $q=-1$ the orbits oscillate with constant
+amplitude around $x^*$ (stable, but not asymptotically), and for $q=1$
+with $b=0$ every state is an equilibrium.
+
+\begin{theorem}[Derivative criterion] Let $x^*$ be an equilibrium of the
+autonomous equation $x_{n+1}=f(x_n)$, and let $f$ be differentiable at
+$x^*$. If $|f'(x^*)|<1$, the equilibrium is asymptotically stable; if
+$|f'(x^*)|>1$, it is unstable. If $|f'(x^*)|=1$, the criterion is
+inconclusive.
+\end{theorem}
+
+\begin{proof} Suppose $|f'(x^*)|<1$, and choose a number $k$ with
+$|f'(x^*)|<k<1$. By the definition of derivative, the ratio
+\[ \frac{f(x)-x^*}{x-x^*} \]
+tends to $f'(x^*)$ as $x\to x^*$; hence there is a neighbourhood of
+$x^*$ in which its absolute value is at most $k$, that is,
+\[ |f(x)-x^*| \le k\,|x-x^*|. \]
+If $x_0$ belongs to this neighbourhood, the inequality applies at every
+step, and induction gives
+\[ |x_n-x^*| \le k^n\,|x_0-x^*|: \]
+the orbit remains in the neighbourhood for ever and $x_n\to x^*$, since
+$k^n\to 0$ (\S 11): the equilibrium is asymptotically stable. If
+$|f'(x^*)|>1$: the same argument with $1<k<|f'(x^*)|$ gives
+$|f(x)-x^*|\ge k\,|x-x^*|$ for $x\neq x^*$ in a neighbourhood $W$ of
+$x^*$: as long as an orbit with $x_0\neq x^*$ remains in $W$, its
+distance from $x^*$ grows at least geometrically, and since $W$ is
+bounded the orbit must leave $W$ after finitely many steps: the
+equilibrium is unstable. \end{proof}
+
+The quantity $f'(x^*)$ acts as the local factor of the error: near the
+equilibrium, the equation behaves like the linear one with ratio
+\[ q = f'(x^*), \]
+because $x_{n+1}-x^* \approx f'(x^*)\,(x_n-x^*)$ for $x_n$ close to
+$x^*$. The derivative criterion is therefore the exact counterpart of
+the linear analysis, and it reduces the stability of a non-linear
+equilibrium to a computation: the derivative of the evolution law
+evaluated at the equilibrium.
+
+\subsection*{Example}
+
+For the logistic model the evolution law is
+$f(P) = P + r\,P(1-P/K)$, with derivative
+\[ f'(P) = 1 + r - 2r\,\frac{P}{K}. \]
+At the equilibrium $P^*=0$ one has $f'(0)=1+r>1$: extinction is
+unstable, and a small population moves away. At $P^*=K$ one has
+$f'(K)=1-r$: the carrying capacity is asymptotically stable exactly when
+$|1-r|<1$, that is, $0<r<2$ -- monotonically for $0<r<1$, with damped
+oscillations for $1<r<2$ -- and unstable for $r>2$, in agreement with the
+analysis of the model.
+
+Two remarks close the subsection. When $|f'(x^*)|=1$ the criterion does
+not decide: the equilibrium may be stable, as for $q=-1$ in the linear
+case, or unstable, and the study requires other tools. And for the
+second-order linear equations the role of the derivative is played by
+the roots of the characteristic equation: the equilibrium is
+asymptotically stable exactly when both roots have modulus smaller than
+$1$, which is what happens in the accelerator model for the parameter
+ranges discussed there.
 
 \end{document}  
