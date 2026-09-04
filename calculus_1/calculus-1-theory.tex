@@ -159,7 +159,7 @@ The relation $\le$ is called an \emph{order} on $F$.
 A field $F$ equipped with an order relation $\le$ satisfying R3 is called an \emph{ordered field}. In an ordered field one writes $x>0$ to mean $0<x$, and $x<0$ to mean $x<0$.
 The standard examples of ordered fields are $\mathbb{Q}$ and $\mathbb{R}$.
 \section{Supremum and Infimum}
-Let $A\subseteq\mathbb{R}$ be a nonempty set. Since $\mathbb{R}$ is an ordered field (“The relation $\le$ is called an order on $F$.” and “The standard examples of ordered fields are $\mathbb{Q}$ and $\mathbb{R}$.”), we can compare its elements and define upper and lower bounds.
+Let $A\subseteq\mathbb{R}$ be a nonempty set. Since $\mathbb{R}$ is an ordered field, we can compare its elements and define upper and lower bounds.
 \subsection*{Upper bounds and supremum}
 \begin{definition}[Upper bound] A real number $M$ is an \emph{upper bound} of $A$ if
 \[ x \le M \qquad \text{for all } x\in A. \]
@@ -485,8 +485,8 @@ A \emph{sequence} is an ordered list of real numbers
 indexed by the integers $n\ge 0$.
 Formally, a sequence is a function
 \[ a : \mathbb{N} \to \mathbb{R}, \qquad n \mapsto a_n, \]
-where $\mathbb{N}$ denotes the set of non’negative integers.
-The value $a_n$ is called the \emph{$n$’th term} of the sequence.
+where $\mathbb{N}$ denotes the set of non-negative integers.
+The value $a_n$ is called the \emph{$n$-th term} of the sequence.
 A sequence may be described by an explicit formula (for example $a_n = 1/n$) or by a recurrence relation (for example $a_{n+1} = q\,a_n$).
 \subsection{Convergence of a sequence}
 A sequence may approach a real number as $n$ becomes large.
@@ -517,7 +517,7 @@ A sequence is said to \emph{diverge to $+\infty$} if its terms grow without boun
 \[ a_n > M \qquad \text{for all } n \ge N. \]
 Similarly, it \emph{diverges to $-\infty$} if for every $M\in\mathbb{R}$ there exists $N$ such that
 \[ a_n < M \qquad \text{for all } n \ge N. \]
-In this sense, a “divergent sequence” is one whose terms tend to infinity in absolute value.
+In this sense, a ``divergent sequence'' is one whose terms tend to infinity in absolute value.
 \subsubsection*{Sequences that are neither convergent nor divergent}
 A sequence may fail to converge and also fail to diverge to $\pm\infty$.
 Such sequences are described as \emph{neither convergent nor divergent}.
@@ -621,7 +621,7 @@ We say that $f$ has a \emph{jump discontinuity} at $x_0$ if the one-sided limits
 both exist as finite real numbers, but
 \[ \lim_{x \to x_0^-} f(x) \ne \lim_{x \to x_0^+} f(x). \]
 \end{definition}
-In this case the function “jumps” from one value to another when crossing the point $x_0$.
+In this case the function ``jumps'' from one value to another when crossing the point $x_0$.
 The function cannot be continuous at $x_0$, since continuity requires the left-hand and right-hand limits to coincide and equal the value of the function.
 \subsection{Neighbourhood of a point}
 The behaviour of a function near a point is often described using the notion of a neighbourhood.
@@ -649,7 +649,7 @@ The change of variable allows us to evaluate limits by substituting the inner ex
 \subsection{Continuity of elementary functions}
 Elementary functions encountered in calculus possess strong continuity properties.
 The following results summarize the fundamental facts.
-\begin{definition}[Continuity of elementary functions] The basic elementary functions — polynomials, rational functions (where defined), exponential and logarithmic functions, trigonometric and inverse trigonometric functions — are continuous on every point of their domain. \end{definition}
+\begin{definition}[Continuity of elementary functions] The basic elementary functions --- polynomials, rational functions (where defined), exponential and logarithmic functions, trigonometric and inverse trigonometric functions --- are continuous on every point of their domain. \end{definition}
 \begin{definition}[Continuity preserved by algebraic operations] Let $f$ and $g$ be continuous at a point $x_0$.
 Then the functions
 \[ f+g,\qquad f-g,\qquad f\cdot g,\qquad \frac{f}{g}\ \text{(if } g(x_0)\ne 0) \]
@@ -696,7 +696,7 @@ that is, if $f(a)$ and $f(b)$ have opposite signs, then there exists at least on
 \[ f(c) = 0. \]
 \end{theorem}
 In other words, a continuous function that takes positive values at one endpoint of an interval and negative values at the other must vanish somewhere inside the interval.
-The function cannot “jump over” the value zero without violating continuity.
+The function cannot ``jump over'' the value zero without violating continuity.
 \subsection{Weierstrass Theorem}
 A continuous function defined on a closed and bounded interval always reaches its largest and smallest values.
 This fundamental result is known as the \emph{Weierstrass Theorem}.
@@ -705,10 +705,10 @@ This fundamental result is known as the \emph{Weierstrass Theorem}.
 such that
 \[ f(x_{\min}) = \min_{x \in [a,b]} f(x), \qquad f(x_{\max}) = \max_{x \in [a,b]} f(x). \]
 \end{theorem}
-In other words, a continuous function on a closed interval cannot “escape” to infinity and cannot approach its extrema without attaining them.
+In other words, a continuous function on a closed interval cannot ``escape'' to infinity and cannot approach its extrema without attaining them.
 The compactness of the interval ensures both boundedness and the existence of maximum and minimum values.
 \subsection{Intermediate Value Theorem}
-A continuous function on an interval cannot “skip” values.
+A continuous function on an interval cannot ``skip'' values.
 If it takes two different values at the endpoints of an interval, then it must take every value in between.
 This fundamental result is known as the \emph{Intermediate Value Theorem}.
 \begin{theorem}[Intermediate Value Theorem] Let $f$ be a real function that is continuous on the closed interval $[a,b]$. Let $L$ be any real number between $f(a)$ and $f(b)$, that is,
@@ -727,28 +727,28 @@ This number is called the $n$th root of $y$ and is denoted by $\sqrt[n]{y}$. \en
 In other words, the function $x \mapsto x^n$ is continuous and strictly increasing on $(0,+\infty)$, and therefore it admits a unique inverse on this interval.
 This inverse function assigns to each positive $y$ its unique positive $n$th root.
 \subsection{Monotonicity theorem for functions}
-A monotone function on an interval has well’defined one’sided limits at every point of the interval.
+A monotone function on an interval has well-defined one-sided limits at every point of the interval.
 Inside the interval these limits are finite, while at the endpoints they may be finite or infinite.
 \begin{theorem}[Monotonicity theorem] Let $f$ be a real function that is monotone (increasing or decreasing) on the interval $[a,b]$.
 \begin{itemize}
-\item For every point $x_0 \in (a,b)$, both one’sided limits
+\item For every point $x_0 \in (a,b)$, both one-sided limits
 \[
 \lim_{x \to x_0^-} f(x)
 \qquad\text{and}\qquad
 \lim_{x \to x_0^+} f(x)
 \]
 exist and are finite.
-\item At the left endpoint $a$, the right’hand limit
+\item At the left endpoint $a$, the right-hand limit
 \[
 \lim_{x \to a^+} f(x)
 \]
 exists and may be finite or $+\infty$ or $-\infty$.
-\item At the right endpoint $b$, the left’hand limit
+\item At the right endpoint $b$, the left-hand limit
 \[
 \lim_{x \to b^-} f(x)
 \]
 exists and may be finite or $+\infty$ or $-\infty$. \end{itemize} \end{theorem}
-In other words, monotonicity ensures that the function has a well’defined behaviour near every point of the interval:
+In other words, monotonicity ensures that the function has a well-defined behaviour near every point of the interval:
 inside the interval the function cannot oscillate, and at the endpoints it may diverge but never oscillate.
 \section{Differential Calculus}
 Differential calculus studies how functions change and how their behaviour can be described locally.
@@ -961,13 +961,6 @@ While the first derivative measures the slope of the tangent line, the second de
 If the derivative $f'$ is differentiable, the \emph{second derivative} of $f$ is
 \[ f''(x) = (f'(x))'. \]
 \end{definition}
-\subsection*{Geometric meaning}
-The second derivative indicates how the graph bends:
-\begin{itemize}
-\item If $f''(x) > 0$, the graph is \emph{concave up}: the tangent slope is increasing, and the curve bends upward like a cup.
-\item If $f''(x) < 0$, the graph is \emph{concave down}: the tangent slope is decreasing, and the curve bends downward like an arch.
-\item If $f''(x_0) = 0$, the point $x_0$ may be an \emph{inflection point}, where the concavity changes sign. \end{itemize}
-Thus the second derivative provides information about the shape of the graph and helps identify inflection points and classify critical points.
 \subsection {Continuity of convex and concave functions}
 Convexity and concavity impose strong regularity conditions on a function.
 In particular, a convex or concave function cannot have interior discontinuities.
@@ -975,7 +968,7 @@ In particular, a convex or concave function cannot have interior discontinuities
 If $f$ is convex or concave on $I$, then $f$ is continuous at every interior point of $I$.
 Possible discontinuities may occur only at the endpoints of $I$. \end{theorem}
 \subsection*{Interpretation}
-A convex or concave function cannot “jump” inside the interval:
+A convex or concave function cannot ``jump'' inside the interval:
 its graph must bend smoothly without breaks.
 However, if the interval has endpoints (for example $[a,b)$ or $(a,b]$), the function may fail to be continuous at $a$ or $b$, but never in the interior.
 Convexity and concavity therefore guarantee: \begin{itemize}
@@ -984,7 +977,7 @@ Convexity and concavity therefore guarantee: \begin{itemize}
 \item possible discontinuities only at the boundary points. \end{itemize}
 \subsection {Convexity and derivatives}
 Convexity can be characterized through the behaviour of the derivative.
-A convex function has a non’decreasing derivative; a concave function has a non’increasing derivative.
+A convex function has a non-decreasing derivative; a concave function has a non-increasing derivative.
 \begin{theorem}[Convexity and derivatives] Let $f$ be a real function defined on an interval $I$ and differentiable on the interior of $I$. \begin{itemize}
 \item $f$ is convex on $I$ if and only if its derivative $f'$ is non-decreasing on $I$.
 \item $f$ is concave on $I$ if and only if its derivative $f'$ is non-increasing on $I$. \end{itemize} If $f$ is twice differentiable, these conditions are equivalent to: \begin{itemize}
@@ -992,12 +985,6 @@ A convex function has a non’decreasing derivative; a concave function has a no
 \quad (convexity),
 \item $f''(x) \le 0$ for all $x$ in $I$
 \quad (concavity). \end{itemize} \end{theorem}
-\subsection*{Geometric meaning}
-\begin{itemize}
-\item For a convex function, the slope of the tangent line increases: the graph bends upward.
-\item For a concave function, the slope of the tangent line decreases: the graph bends downward.
-\item The sign of the second derivative describes the curvature of the graph. \end{itemize}
-Convexity therefore corresponds to “accelerating slope”, while concavity corresponds to “decelerating slope”.
 \subsection {Convexity and tangent lines}
 Convexity has a clear geometric interpretation in terms of tangent lines.
 For a convex function, every tangent line lies below the graph; for a concave function, every tangent line lies above it.
@@ -1012,16 +999,6 @@ That is, the tangent line at $x_0$ lies below the graph of $f$.
 f(x) \le f(x_0) + f'(x_0)(x - x_0).
 \]
 That is, the tangent line at $x_0$ lies above the graph of $f$. \end{itemize} \end{theorem}
-\subsection*{Geometric meaning}
-For a convex function: \begin{itemize}
-\item the graph bends upward;
-\item the slope of the tangent line increases;
-\item every tangent line touches the graph from below. \end{itemize}
-For a concave function: \begin{itemize}
-\item the graph bends downward;
-\item the slope of the tangent line decreases;
-\item every tangent line touches the graph from above. \end{itemize}
-This property is fundamental in optimization and in the geometric interpretation of convexity.
 \subsection {Inflection points and the second derivative}
 An inflection point is a point where the graph of a function changes concavity.
 The second derivative provides a useful criterion for detecting such points.
@@ -1030,12 +1007,6 @@ If $x_0$ is an inflection point of $f$, then the concavity changes sign at $x_0$
 \[ f''(x_0) = 0 \]
 or the second derivative does not exist at $x_0$.
 Conversely, if $f''(x_0)=0$ and the second derivative changes sign when passing through $x_0$, then $x_0$ is an inflection point of $f$. \end{theorem}
-\subsection*{Geometric meaning}
-At an inflection point: \begin{itemize}
-\item the graph switches from concave up to concave down, or vice versa;
-\item the tangent line exists and crosses the graph;
-\item the second derivative typically vanishes, but this condition alone is not sufficient — the change of concavity is essential. \end{itemize}
-Thus the second derivative helps identify inflection points, but the decisive criterion is the change in concavity.
 \subsection {Inflection point and tangent line}
 An inflection point is a point where the function changes concavity.
 A key geometric property is that the tangent line at such a point intersects (or is crossed by) the graph.
@@ -1044,12 +1015,6 @@ If $x_0$ is an inflection point of $f$, then the tangent line at $x_0$
 \[ T(x) = f(x_0) + f'(x_0)(x - x_0) \]
 is crossed by the graph of $f$ at $x_0$.
 Equivalently, the function lies on one side of the tangent line for $x < x_0$ and on the opposite side for $x > x_0$. \end{theorem}
-\subsection*{Geometric meaning}
-At an inflection point: \begin{itemize}
-\item the concavity changes sign;
-\item the tangent line touches the graph at $x_0$;
-\item the graph passes from one side of the tangent to the other. \end{itemize}
-Thus, the tangent line is not a supporting line (as in convex or concave functions), but a line that the curve actually crosses.
 \subsection {Little-$o$ notation}
 The little-$o$ notation describes a quantity that becomes negligible compared to another as the variable approaches a point.
 It is used to express that one function goes to zero faster than another.
@@ -1059,22 +1024,10 @@ We say that
 if
 \[ \lim_{x\to x_0} \frac{f(x)}{g(x)} = 0. \]
 \end{definition}
-\subsection*{Meaning}
-The expression $f(x) = o(g(x))$ means that $f(x)$ becomes **small much faster** than $g(x)$ as $x$ approaches $x_0$.
-Equivalently, $f(x)$ is negligible compared to $g(x)$ in that limit.
-Typical examples: \begin{itemize}
-\item $x = o(1)$ as $x\to 0$ (because $x/1 \to 0$),
-\item $x^2 = o(x)$ as $x\to 0$ (because $x^2/x = x \to 0$),
-\item $\sin x - x = o(x)$ as $x\to 0$. \end{itemize}
-Little-$o$ notation is widely used in Taylor expansions and in expressing error terms.
+Little-$o$ notation is widely used in Taylor expansions and in expressing error terms. The expression $f(x) = o(g(x))$ means that $f(x)$ becomes small much faster than $g(x)$ as $x$ approaches $x_0$; equivalently, $f(x)$ is negligible compared to $g(x)$ in that limit. Typical examples: $x = o(1)$ as $x\to 0$ (because $x/1 \to 0$).
 \subsection*{Little-$o$ notation and linear approximation}
 Little-$o$ notation is used to describe error terms that become negligible compared to a given quantity.
-For a differentiable function, it provides a precise way to express the accuracy of the linear approximation.
-\begin{definition}[Little-$o$ notation] We write
-\[ f(x) = o(g(x)) \quad \text{as } x \to x_0 \]
-if
-\[ \lim_{x \to x_0} \frac{f(x)}{g(x)} = 0. \]
-This means that $f(x)$ becomes negligible compared to $g(x)$ near $x_0$. \end{definition}
+For a differentiable function, it provides a precise way to express the accuracy of the linear approximation, exactly in the sense of the definition above, which we recall: $f(x)=o(g(x))$ as $x\to x_0$ means that $\lim_{x\to x_0} f(x)/g(x)=0$.
 \subsection*{Usage in linear approximation}
 If $f$ is differentiable at $x_0$, then for a small increment $dx$ we have the expansion
 \[ f(x_0 + dx) = f(x_0) + f'(x_0)\,dx + o(dx) \quad \text{as } dx \to 0. \]
@@ -1105,11 +1058,6 @@ If $x_0 = 0$, this becomes the Maclaurin expansion:
 + o(x^n)
 \quad \text{as } x \to 0. \]
 \end{theorem}
-\subsection*{Meaning}
-The term
-\[ o\!\left((x - x_0)^n\right) \]
-means that the remainder is **negligible compared to $(x - x_0)^n$** as $x$ approaches $x_0$.
-Thus the polynomial of degree $n$ gives the best local approximation of the function near $x_0$, and the Peano remainder quantifies how small the error is.
 \subsection {Taylor formula with Lagrange remainder}
 The Taylor expansion expresses a function as a polynomial plus a remainder term that depends on a derivative evaluated at an intermediate point.
 The Lagrange form of the remainder gives an explicit bound on the error.
@@ -1133,9 +1081,6 @@ If $x_0 = 0$, the expansion becomes
 + \frac{f^{(n)}(0)}{n!}x^n
 + \frac{f^{(n+1)}(\xi)}{(n+1)!}x^{\,n+1}, \]
 with $\xi$ between $0$ and $x$.
-\subsection*{Meaning}
-The Lagrange remainder shows that the error behaves like the next derivative evaluated at some intermediate point.
-It provides a practical estimate for how accurate the Taylor polynomial is near $x_0$.
 \section {Series}
 A series is the sum of the terms of an infinite sequence.
 While a sequence lists numbers, a series adds them together.
@@ -1153,10 +1098,6 @@ is said to \emph{converge} if the sequence of partial sums $(S_N)$ converges to 
 \[ \lim_{N\to\infty} S_N = S \in \mathbb{R}. \]
 In this case, $S$ is called the \emph{sum} of the series.
 If the limit does not exist or is infinite, the series \emph{diverges}.
-\subsection*{Meaning}
-A convergent series represents an infinite process that stabilizes to a finite value.
-A divergent series grows without bound or oscillates.
-Series are fundamental in analysis, especially for defining functions through power expansions and studying approximations.
 \subsection {Geometric series}
 A \emph{geometric series} is the series associated with a geometric progression.
 \begin{definition}[Geometric series] Let $(a_n)_{n\ge 0}$ be a geometric progression of ratio $q$, so that
@@ -1423,19 +1364,13 @@ Setting \[ h = \frac{b-a}{n}, \qquad x_i = a + i\,h \quad (i=0,1,\ldots,n), \] e
 \begin{definition}[Definite integral] Let $f$ be bounded on $[a,b]$.
 If, as the mesh of the partition tends to $0$ and independently of the choice of the sampling points, the Cauchy--Riemann sums $S(f,P,\xi)$ all tend to the same finite limit $I$, then $f$ is said to be \emph{Riemann integrable} on $[a,b]$, and the limit is called the \emph{definite integral} of $f$ over $[a,b]$: \[ \int_a^b f(x)\,dx = \lim_{\|P\|\to 0}\;\sum_{i=1}^{n} f(\xi_i)\,(x_i-x_{i-1}). \] \end{definition}
 Continuous functions on a closed interval are Riemann integrable; the same is true for the larger class of bounded functions whose set of discontinuities has negligible measure.
-\subsection*{Meaning}
-The Cauchy--Riemann sum is the total signed area of a collection of rectangles that imitate the graph of $f$.
-Refining the partition makes the imitation more faithful, and the limit of the sums as the mesh goes to zero is the signed area of the region under the graph, that is, the definite integral.
 \subsection {Classes of integrable functions}
 Riemann integrability is a restrictive property, but three large and practically important classes of functions always satisfy it: continuous functions, monotone functions, and bounded functions with only finitely many points of discontinuity.
 In each case the function is defined on a closed and bounded interval $[a,b]$.
 \begin{theorem}[Continuous functions] If $f$ is continuous on $[a,b]$, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
 \begin{theorem}[Monotone functions] If $f$ is monotone on $[a,b]$, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
 \begin{theorem}[Bounded functions with finitely many discontinuities] If $f$ is bounded on $[a,b]$ and discontinuous at only finitely many points, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
-These conditions are sufficient but not necessary: the class of Riemann integrable functions is strictly larger, and it includes in particular every bounded function whose set of discontinuity points has negligible measure.
-\subsection*{Meaning}
-These three classes guarantee that the definite integral is well defined for the functions that appear in practice.
-Continuous, monotone and piecewise-continuous functions all admit an integral, so in the rest of the section we can freely use the integral sign without worrying about whether the object it denotes exists.
+These conditions are sufficient but not necessary: the class of Riemann integrable functions is strictly larger, and it includes in particular every bounded function whose set of discontinuity points has negligible measure. Continuous, monotone and piecewise-continuous functions all admit an integral.
 \subsection {Mean value theorem for integrals}
 The definite integral measures the accumulation of a quantity over an interval.
 By the average value, the integral can be read back as a kind of ``mean height'' of the function: the mean value theorem for integrals makes this interpretation precise under continuity.
@@ -1446,9 +1381,6 @@ When a weighted average is needed, the following generalisation is used.
 \begin{theorem}[Generalised mean value theorem for integrals] Let $f$ be continuous on $[a,b]$ and let $g$ be Riemann integrable on $[a,b]$ and of constant sign on $[a,b]$.
 Then there exists a point $c\in[a,b]$ such that \[ \int_a^b f(x)\,g(x)\,dx = f(c)\int_a^b g(x)\,dx. \] \end{theorem}
 With $g\equiv 1$ the generalised statement reduces to the mean value theorem for integrals above.
-\subsection*{Meaning}
-The mean value theorem for integrals guarantees that a continuous function attains its average value at some point of the interval: the integral can be replaced by the product of a single value $f(c)$ and the length $b-a$.
-This is the integral analogue of the mean value theorem of differential calculus, and it is useful every time an integral over an interval has to be converted back into a point value.
 \subsection {Fundamental theorem of calculus}
 The fundamental theorem of calculus connects the two operations that define calculus: differentiation and integration.
 It states, in two complementary parts, that integration and differentiation are inverse operations: the derivative of an integral returns the original function, and the integral of a derivative measures the total increment of a function.
@@ -1456,11 +1388,7 @@ To state the first part, consider the \emph{area function} of a continuous funct
 \begin{theorem}[Fundamental theorem of calculus, part I] Let $f$ be continuous on $[a,b]$, and let \[ F(x) = \int_a^x f(t)\,dt, \qquad x\in[a,b]. \] Then $F$ is differentiable on $[a,b]$ and \[ F'(x) = f(x). \] \end{theorem}
 Thus the area function $F$ is an antiderivative of $f$: differentiating the integral gives back the original function.
 In particular, every continuous function admits an antiderivative, even if no elementary formula for it is known.
-The first part reconstructs an antiderivative from an integral; the complementary second part, stated at the end of this section, reconstructs an integral from an antiderivative.
-\subsection*{Meaning}
-The fundamental theorem of calculus is the reason why the two halves of calculus form a single theory.
-The derivative measures the rate of change of an accumulation process, and the integral measures the total change produced by a given rate.
-Part I guarantees that every continuous function possesses primitives and that the accumulation process can be differentiated back into the integrand.
+The first part reconstructs an antiderivative from an integral; the complementary second part reconstructs an integral from an antiderivative.
 \subsection {Main methods of integration}
 By the fundamental theorem of calculus, computing a definite integral reduces to finding an antiderivative (also called a \emph{primitive}) of the integrand.
 This subsection collects the main methods used for solving integrals: the table of immediate integrals, integration by parts,and substitution, together with linearity,which makes it possible to decompose integrals into simpler pieces.
@@ -1487,9 +1415,6 @@ The method applies when the integrand is the product of a function that simplifi
 Substitution is the integral counterpart of the chain rule of differentiation.
 If $g$ has continuous derivative on the relevant interval,and $F$ is a primitive of $f$, then \[ \int f(g(x))\,g'(x)\,dx = \int f(t)\,dt,\qquad t=g(x). \] Equivalently,setting $t=g(x)$ and $dt=g'(x)\,dx$,the integral takes the following form after the change of variable.
 For definite integrals,the boundaries change accordingly: \[ \int_a^b f(g(x))\,g'(x)\,dx = \int_{g(a)}^{g(b)} f(t)\,dt, \] when $g$ has continuous derivative on $[a,b]$.
-\subsection*{Meaning}
-These four tools cover the computation of most primitives of elementary functions:linearity decomposes the integral into simpler pieces, the table provides the atomic formulas,integration by parts handles products,and substitution handles compositions.
-In combination they reduce almost every integral that appears in exercises to the table of immediate integrals,after which the fundamental theorem of calculus gives the value of the corresponding definite integral. 
 \subsection {Numerical calculation of an integral: the midpoint rule}
 
 A primitive of a function is not always available in explicit form, and even
@@ -1542,15 +1467,7 @@ Consequently, if $|f''(x)|\le K$ on $[a,b]$, the error of the midpoint rule is b
     \le \frac{K}{24}\,\frac{(b-a)^3}{n^4}.
 \]
 Hence the estimate improves rapidly as $n$ grows: doubling $n$ divides the bound by $16$.
-
-\subsection*{Meaning}
-
-The midpoint rule is the first example of a numerical integration method.  It
-is easy to implement and reasonably accurate for its simplicity, and it
-illustrates the general idea shared by all these methods: replace the
-integrand by a simple function, integrate the simple function exactly, and
-estimate how close the result is to the true integral.
-
+The midpoint rule is the first example of a numerical integration method: it illustrates the general idea shared by all these methods---replace the integrand by a simple function, integrate the simple function exactly, and estimate how close the result is to the true integral.
 \subsection {Generalized (improper) integrals}
 
 The Riemann integral was defined for functions that are bounded on a closed
@@ -1612,15 +1529,6 @@ A comparison criterion extends the direct comparison test to improper
 integrals: if $0\le f(x)\le g(x)$ near the singularity and the generalized
 integral of $g$ converges, then the generalized integral of $f$ converges as
 well.
-
-\subsection*{Meaning}
-
-Generalized integrals extend the definite integral to the two situations in
-which it was not defined: unbounded intervals and unbounded functions.  The
-integration of an unbounded function is interpreted as a limit of proper
-integrals on truncated domains, and convergence means that this limit is
-finite and independent of how the truncation is performed.
-
 \subsubsection {Integrability criteria at a finite point}
 
 The convergence of a generalized integral with a finite singularity can
@@ -1667,17 +1575,8 @@ power, the power criterion applies directly:
 f(x)\sim\frac{C}{(b-x)^{\alpha}}
 \quad\Longrightarrow\quad
 \int_a^b f(x)\,dx
-\quad\text{converges} \iff \alpha<1.
+\quad\text{converges } \iff \alpha<1.
 \]
-
-\subsection*{Meaning}
-
-The criteria at a finite point translate the question of convergence into a
-comparison with a power function.  In practice they are the quickest tools for
-establishing convergence or divergence of an improper integral whose
-antiderivative is not available, and they prepare the analogous criteria for
-integrals over an unbounded interval.
-
 \subsubsection {Integration over unbounded intervals}
 
 The second situation in which the ordinary integral is not defined is that of
@@ -1761,17 +1660,8 @@ a power of $x$, the integral converges exactly when the exponent exceeds $1$,
 f(x)\sim\frac{C}{x^{\alpha}}
 \quad\Longrightarrow\quad
 \int_a^{\infty} f(x)\,dx
-\quad\text{converges} \iff \alpha>1.
+\quad\text{converges } \iff \alpha>1.
 \]
-
-\subsection*{Meaning}
-
-Integration over an unbounded interval measures the total amount of a
-quantity that is spread over an infinite domain.  As for finite
-singularities, the convergence problem is reduced by the comparison criteria
-to the study of the power function: the same tool works at zero and at
-infinity, with the roles of the exponent $\alpha$ reversed.
-
 \subsection {Integral functions}
 The fundamental theorem of calculus suggests treating the integral not only as a computational tool but as a way of \emph{defining} functions: a new function can be constructed by integrating a given function with a variable upper limit.
 A function defined in this way is called an \emph{integral function} (or \emph{accumulation function}).
@@ -1786,9 +1676,6 @@ Then $F$ is differentiable on $[a,b]$ and \[ F'(x) = f(x), \qquad x\in[a,b]. \] 
 Moreover, $F$ is increasing on every subinterval where $f\ge 0$ and decreasing on every subinterval where $f\le 0$, and its graph has horizontal tangent at the zeros of $f$. \end{theorem}
 The construction produces the elementary functions themselves: for $x>0$ the natural logarithm is the integral function of $1/t$ with initial point $1$, \[ \ln x = \int_1^x \frac{dt}{t}, \] and the arctangent is the integral function of $1/(1+t^2)$ with initial point $0$, \[ \arctan x = \int_0^x \frac{dt}{1+t^2}. \]
 When no elementary primitive exists, the integral function is the very definition of a new function: the \emph{error function} \[ \operatorname{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\,dt \] and the \emph{sine integral} \[ \operatorname{Si}(x) = \int_0^x \frac{\sin t}{t}\,dt \] have no elementary expression, yet their continuity, differentiability, monotonicity and graphical behaviour follow from the properties of the integral alone.
-\subsection*{Meaning}
-Integral functions shift the viewpoint of the theory: the integral is used to construct functions, not only to compute areas.
-Every primitive found by the methods of integration is an integral function, and every continuous function generates a primitive in this way, whether or not it can be written in elementary terms.
 
 \subsection {The second fundamental theorem of calculus}
 The \emph{second fundamental theorem of calculus}, also known as \emph{Torricelli's theorem} or the \emph{Newton--Leibniz formula}, evaluates a definite integral by means of any primitive of the integrand, without passing to the limit of Cauchy--Riemann sums.
@@ -1797,9 +1684,6 @@ Then \[ \int_a^b f(x)\,dx = F(b) - F(a). \] \end{theorem}
 The difference $F(b)-F(a)$ records the total change of $F$ over $[a,b]$; it is often written with the evaluation notation \[ \Bigl[ F(x) \Bigr]_a^b = F(b)-F(a). \]
 Any primitive may be used: if $F_1$ and $F_2$ are both primitives of $f$ on $[a,b]$, then they differ by a constant, and the quantity $F(b)-F(a)$ is the same for both.
 The two fundamental theorems are converses of one another: the first reconstructs an antiderivative from an integral, the second reconstructs an integral from an antiderivative, and together they show that differentiation and integration are inverse operations.
-\subsection*{Meaning}
-The second fundamental theorem turns the evaluation of every definite integral into the search for a primitive: it is the principle underlying the methods of integration presented in this section.
-Combined with the first part, it states that the derivative of an integral returns the integrand and that the integral of a derivative measures the total increment of a function.
 
 \subsection {Some notions on convolution and linear physical systems}
 Many physical systems -- electrical circuits, thermal devices, mechanical oscillators -- are described, at least in first approximation, by \emph{linear} models.  A system is \emph{linear} when it satisfies the \emph{superposition principle}: if an input $f_1$ produces the output $y_1$ and an input $f_2$ produces the output $y_2$, then the input $\alpha f_1+\beta f_2$ produces the output $\alpha y_1+\beta y_2$, for all constants $\alpha,\beta$.  A system is \emph{time-invariant} when a delay of the input produces the same delay of the output.  The integral operation that combines the input signal with the response of such a system is the \emph{convolution}.
@@ -1833,10 +1717,6 @@ y(x) = \frac{1}{\tau}\int_0^x f(t)\,e^{-(x-t)/\tau}\,dt.
 \]
 The formula exhibits $y$ as a weighted average of the whole past of the input, in which recent instants count more than remote ones, and one verifies that $y$ satisfies $\tau\,y'+y=f$ with $y(0)=0$.
 
-\subsection*{Meaning}
-
-Convolution is the integral counterpart of the superposition principle: the response of a linear system at time $x$ is the integral of all the contributions produced by the past history of the input, each delayed and weighted by the memory of the system.
-In this way the definite integral appears not only as a computational tool but as the mathematical model of accumulation in physics, and the theory of integration developed in this section becomes the natural language in which linear systems are described.
 
 \section{Discrete dynamical models}
 
@@ -1977,19 +1857,6 @@ interest rate $i$, the same law describes a capital $M_n$ invested at
 compound interest, $M_{n+1}=(1+i)M_n$: the growth of a capital is a
 Malthus model with growth rate $i$.
 
-\subsection*{Meaning}
-
-The Malthus model is the mathematical expression of \emph{compound
-growth}: each period reproduces the present state multiplied by a
-constant factor, so the population grows by a fixed percentage and, as a
-function of $n$, it is the restriction of an exponential function to the
-integers. Over short horizons, when the rate is genuinely constant, the
-model describes reality well. Over long horizons its prediction of
-unbounded exponential growth is unrealistic, because growth is limited by
-finite resources; this observation, made by Malthus in 1798 together with
-the remark that subsistence can grow only linearly, motivates the
-non-linear models, introduced later, in which the growth rate depends on
-the size of the population.
 
 \subsection{The logistic model}
 
