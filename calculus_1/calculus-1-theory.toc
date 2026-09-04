@@ -1,0 +1,138 @@
+\contentsline {part}{Part I --- Preliminaries}{5}{section*.1}%
+\contentsline {section}{\numberline {1}Formalities: mathematical language}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Predicate}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Statement}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Universal implication}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Theorem}{8}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Law of contrapositives}{8}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Proof by contradiction}{8}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Geometric progression}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Geometric sum}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Infinite geometric series}{9}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Binomial coefficients and Newton's formula}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Binomial coefficients}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Newton's binomial formula}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Special cases}{10}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Fields and ordered fields}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Fields}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}R1: Axioms for addition}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}R2: Axioms for multiplication}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Distributive law}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}R3: Order relation}{11}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Ordered fields}{12}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Supremum and Infimum}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Upper bounds and supremum}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Lower bounds and infimum}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Existence in $\mathbb {R}$}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}R4: Supremum property}{13}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Axiomatic definition of $\mathbb {R}$}{14}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Triangle inequality}{15}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Reverse triangle inequality}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Geometric interpretation}{15}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Principle of mathematical induction}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Strong induction}{16}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Complex numbers}{17}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Modulus and argument}{17}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Trigonometric form}{17}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}De Moivre's formula}{17}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Roots}{18}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}n-th roots of a complex number}{18}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Fundamental theorem of algebra}{19}{subsection.8.6}%
+\contentsline {part}{Part II --- Calculus}{20}{section*.2}%
+\contentsline {section}{\numberline {9}Functions of one variable}{21}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Definition of a function}{21}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}The Cartesian plane}{21}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Graph of a function}{21}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Trigonometric functions}{21}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Geometric representation}{22}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Interpretation}{22}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Inverse functions}{22}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Geometric representation}{23}{subsection.9.8}%
+\contentsline {section}{\numberline {10}Limits and continuity}{24}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Sequences}{24}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Convergence of a sequence}{24}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Eventual behaviour of a sequence}{24}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Types of behaviour of a sequence}{24}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Squeeze Theorem}{25}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}The exponential limit and the number $e$}{25}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Asymptotic comparisons and estimates}{26}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Ratio Test}{26}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}Uniqueness of the limit}{27}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}Limits of functions}{27}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}Right and left limits of a function}{27}{subsection.10.11}%
+\contentsline {subsection}{\numberline {10.12}Existence of the limit}{27}{subsection.10.12}%
+\contentsline {subsection}{\numberline {10.13}Jump discontinuity}{28}{subsection.10.13}%
+\contentsline {subsection}{\numberline {10.14}Neighbourhood of a point}{28}{subsection.10.14}%
+\contentsline {subsection}{\numberline {10.15}Change of variable in limits}{28}{subsection.10.15}%
+\contentsline {subsection}{\numberline {10.16}Continuity of elementary functions}{29}{subsection.10.16}%
+\contentsline {subsection}{\numberline {10.17}Fundamental limits}{29}{subsection.10.17}%
+\contentsline {subsection}{\numberline {10.18}Theorem of the zeros}{30}{subsection.10.18}%
+\contentsline {subsection}{\numberline {10.19}Weierstrass Theorem}{30}{subsection.10.19}%
+\contentsline {subsection}{\numberline {10.20}Intermediate Value Theorem}{30}{subsection.10.20}%
+\contentsline {subsection}{\numberline {10.21}Existence and uniqueness of the $n$th root}{31}{subsection.10.21}%
+\contentsline {subsection}{\numberline {10.22}Monotonicity theorem for functions}{31}{subsection.10.22}%
+\contentsline {section}{\numberline {11}Differential Calculus}{32}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Derivative of a function}{32}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Slope and tangent line}{32}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Corner points, cusps, and inflection points}{33}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Derivative of an inverse function}{34}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Fermat's theorem}{35}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Mean Value Theorem (Lagrange's theorem)}{35}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Monotonicity test}{36}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}L'Hospital's rule}{37}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Limit of the derivative and one-sided differentiability}{37}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Second derivative}{38}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Continuity of convex and concave functions}{38}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Convexity and derivatives}{39}{subsection.11.12}%
+\contentsline {subsection}{\numberline {11.13}Convexity and tangent lines}{39}{subsection.11.13}%
+\contentsline {subsection}{\numberline {11.14}Inflection points and the second derivative}{39}{subsection.11.14}%
+\contentsline {subsection}{\numberline {11.15}Inflection point and tangent line}{39}{subsection.11.15}%
+\contentsline {subsection}{\numberline {11.16}Little-$o$ notation}{40}{subsection.11.16}%
+\contentsline {subsection}{\numberline {11.17}Taylor--Maclaurin formula with Peano remainder}{40}{subsection.11.17}%
+\contentsline {subsection}{\numberline {11.18}Taylor formula with Lagrange remainder}{41}{subsection.11.18}%
+\contentsline {subsection}{\numberline {11.19}Taylor series. Complex exponential}{41}{subsection.11.19}%
+\contentsline {subsubsection}{\numberline {11.19.1}Complex exponential}{42}{subsubsection.11.19.1}%
+\contentsline {subsubsection}{\numberline {11.19.2}Complex logarithm}{43}{subsubsection.11.19.2}%
+\contentsline {section}{\numberline {12}Series}{44}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Definition}{44}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Convergence}{44}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Geometric series}{44}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Necessary condition for convergence}{45}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Remainder of a convergent series}{45}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Generalized harmonic series}{45}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Criteria for series with non-negative or non-positive terms}{46}{subsection.12.7}%
+\contentsline {subsubsection}{\numberline {12.7.1}Root test}{46}{subsubsection.12.7.1}%
+\contentsline {subsubsection}{\numberline {12.7.2}Ratio test}{47}{subsubsection.12.7.2}%
+\contentsline {subsubsection}{\numberline {12.7.3}Comparison test}{47}{subsubsection.12.7.3}%
+\contentsline {subsection}{\numberline {12.8}Series with varying signs}{48}{subsection.12.8}%
+\contentsline {subsubsection}{\numberline {12.8.1}Leibniz's criterion}{49}{subsubsection.12.8.1}%
+\contentsline {subsubsection}{\numberline {12.8.2}Dirichlet's criterion}{49}{subsubsection.12.8.2}%
+\contentsline {section}{\numberline {13}Integral calculus for functions of one variable}{51}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Cauchy--Riemann sums}{51}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Classes of integrable functions}{52}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Mean value theorem for integrals}{52}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Fundamental theorem of calculus}{53}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Main methods of integration}{53}{subsection.13.5}%
+\contentsline {subsubsection}{\numberline {13.5.1}Linearity}{53}{subsubsection.13.5.1}%
+\contentsline {subsubsection}{\numberline {13.5.2}Immediate integrals}{54}{subsubsection.13.5.2}%
+\contentsline {subsubsection}{\numberline {13.5.3}Integration by parts}{54}{subsubsection.13.5.3}%
+\contentsline {subsubsection}{\numberline {13.5.4}Substitution}{54}{subsubsection.13.5.4}%
+\contentsline {subsection}{\numberline {13.6}Numerical calculation of an integral: the midpoint rule}{54}{subsection.13.6}%
+\contentsline {subsection}{\numberline {13.7}Generalized (improper) integrals}{55}{subsection.13.7}%
+\contentsline {subsubsection}{\numberline {13.7.1}Integration of unbounded functions}{55}{subsubsection.13.7.1}%
+\contentsline {subsubsection}{\numberline {13.7.2}Integrability criteria at a finite point}{56}{subsubsection.13.7.2}%
+\contentsline {subsubsection}{\numberline {13.7.3}Integration over unbounded intervals}{57}{subsubsection.13.7.3}%
+\contentsline {subsubsection}{\numberline {13.7.4}Integrability criteria at infinity}{57}{subsubsection.13.7.4}%
+\contentsline {subsection}{\numberline {13.8}Integral functions}{58}{subsection.13.8}%
+\contentsline {subsection}{\numberline {13.9}The second fundamental theorem of calculus}{59}{subsection.13.9}%
+\contentsline {subsection}{\numberline {13.10}Some notions on convolution and linear physical systems}{59}{subsection.13.10}%
+\contentsline {part}{Part III --- Discrete dynamical systems}{61}{section*.3}%
+\contentsline {section}{\numberline {14}Discrete dynamical models}{62}{section.14}%
+\contentsline {subsection}{\numberline {14.1}The Malthus model}{63}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}The logistic model}{64}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}The accelerator model}{64}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Generalities on difference equations}{65}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Linear first-order equations with constant coefficients}{66}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}Autonomous non-linear equations}{67}{subsection.14.6}%
+\contentsline {subsection}{\numberline {14.7}Linear second-order equations with constant coefficients}{68}{subsection.14.7}%
+\contentsline {subsection}{\numberline {14.8}Stability of the equilibria}{69}{subsection.14.8}%
