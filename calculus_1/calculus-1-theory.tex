@@ -243,7 +243,7 @@ In the ordered field $\mathbb{R}$, the absolute value of a real number $x$ is de
 \[ |x| = \begin{cases} x, & x\ge 0,\\ -x, & x<0. \end{cases} \]
 The absolute value measures the distance of $x$ from $0$ on the real line.
 The fundamental estimate relating absolute values is the \emph{triangle inequality}.
-\begin{theorem}[Triangle inequality] For all real numbers $x,y\in\mathbb{R}$,
+\begin{theorem}[Triangle inequality]\label{thm:triangle-inequality} For all real numbers $x,y\in\mathbb{R}$,
 \[\boxed{ |x+y| \le |x| + |y|. }\]
 \end{theorem}
 This inequality expresses that the distance from $0$ to $x+y$ is never greater than the sum of the distances from $0$ to $x$ and from $0$ to $y$.
@@ -377,7 +377,7 @@ In contrast, the real numbers are not sufficient: for example, the equation
 \[ x^2 + 1 = 0 \]
 has no real solution.
 The introduction of the complex number $i$ with $i^2 = -1$ makes it possible to solve every polynomial equation of positive degree.
-\begin{theorem}[Fundamental theorem of algebra] Every nonconstant polynomial with complex coefficients has at least one complex root. \end{theorem}
+\begin{theorem}[Fundamental theorem of algebra]\label{thm:fundamental-algebra} Every nonconstant polynomial with complex coefficients has at least one complex root. \end{theorem}
 Equivalently, if
 \[ p(z) = a_n z^n + a_{n-1} z^{n-1} + \cdots + a_1 z + a_0, \qquad a_n \neq 0, \]
 is a polynomial of degree $n\ge 1$, then there exists $z_0 \in \mathbb{C}$ such that $p(z_0)=0$.
@@ -414,7 +414,7 @@ Thus a function is a special kind of relation: every input has exactly one outpu
 The collection of all pairs $(x,f(x))$ is the \emph{graph} of $f$:
 \[ \operatorname{graph}(f)=\{(x,f(x)) : x\in A\}\subseteq\mathbb{R}^2. \]
 \subsection{The Cartesian plane}
-The \emph{Cartesian plane}, introduced by René Descartes, is the set of all ordered pairs of real numbers:
+The \emph{Cartesian plane}, introduced by RenÃƒÂ© Descartes, is the set of all ordered pairs of real numbers:
 \[ \mathbb{R}^2 = \{(x,y) : x,y\in\mathbb{R}\}. \]
 It is built from two perpendicular axes: \begin{itemize}
 \item the horizontal axis (the $x$-axis), representing the input variable;
@@ -557,7 +557,7 @@ They may display oscillatory behaviour, irregular variation, or possess multiple
 These sequences do not approach any single real value, nor do they grow without bound.
 \subsection{Squeeze Theorem}
 The Squeeze Theorem provides a useful criterion for determining the limit of a sequence by comparing it with two other sequences whose limits are known.
-\begin{theorem}[Squeeze Theorem] Let $(a_n)$, $(b_n)$, and $(c_n)$ be sequences of real numbers such that
+\begin{theorem}[Squeeze Theorem]\label{thm:squeeze} Let $(a_n)$, $(b_n)$, and $(c_n)$ be sequences of real numbers such that
 \[ a_n \le b_n \le c_n \qquad \text{for all sufficiently large } n. \]
 If
 \[ \lim_{n\to\infty} a_n = L \qquad \text{and} \qquad \lim_{n\to\infty} c_n = L, \]
@@ -568,7 +568,7 @@ The theorem states that if a sequence is eventually trapped between two converge
 \subsection{The exponential limit and the number \texorpdfstring{$e$}{e}}
 The number $e$ plays a central role in calculus and analysis.
 It is defined through the behaviour of a specific sequence.
-\begin{theorem}[Limit defining the number $e$] The sequence
+\begin{theorem}[Limit defining the number $e$]\label{thm:limit-e} The sequence
 \[ a_n = \left(1+\frac{1}{n}\right)^n \]
 is increasing and bounded above.
 Therefore it is convergent, and its limit is denoted by $e$:
@@ -605,7 +605,7 @@ If for sufficiently large $n$ we have
 then the growth of $(a_n)$ is asymptotically controlled by that of $(b_n)$. Such inequalities are frequently used to establish limits or to derive asymptotic estimates.
 \subsection{Ratio Test}
 The ratio test provides a useful criterion for determining whether a sequence diverges to $+\infty$ or converges to $0$, based on the behaviour of the ratio between consecutive terms.
-\begin{theorem}[Ratio Test] Let $(a_n)$ be a sequence of positive real numbers and suppose that the limit
+\begin{theorem}[Ratio Test]\label{thm:ratio-test-limits} Let $(a_n)$ be a sequence of positive real numbers and suppose that the limit
 \[ L = \lim_{n\to\infty} \frac{a_{n+1}}{a_n} \]
 exists.
 \begin{itemize}
@@ -619,7 +619,7 @@ If each term is eventually larger by a fixed proportion, the sequence grows with
 \subsection{Uniqueness of the limit}
 The limit of a sequence, when it exists, is uniquely determined.
 This fundamental property ensures that a sequence cannot converge to two different real numbers.
-\begin{theorem}[Uniqueness of the limit] Let $(a_n)$ be a sequence of real numbers.
+\begin{theorem}[Uniqueness of the limit]\label{thm:uniqueness-limit} Let $(a_n)$ be a sequence of real numbers.
 If $(a_n)$ converges to $L$ and also converges to $M$, then
 \[ L = M. \]
 \end{theorem}
@@ -638,7 +638,7 @@ meaning that $f(x)$ approaches $L$ as $x$ approaches $x_0$ from values greater t
 meaning that $f(x)$ approaches $M$ as $x$ approaches $x_0$ from values smaller than $x_0$. \end{definition}
 \subsection{Existence of the limit}
 A function has a limit at a point if and only if both one-sided limits exist and are equal.
-\begin{theorem}[Existence of the limit] Let $f$ be a real function and let $x_0$ be a point in its domain.
+\begin{theorem}[Existence of the limit]\label{thm:existence-limit} Let $f$ be a real function and let $x_0$ be a point in its domain.
 The limit
 \[ \lim_{x \to x_0} f(x) \]
 exists and equals $L$ if and only if
@@ -671,7 +671,7 @@ Neighbourhoods and punctured neighbourhoods are used to describe limits and cont
 \subsection{Change of variable in limits}
 When evaluating limits, it is often useful to replace the variable with another expression that approaches the same value.
 The following theorem formalizes this idea.
-\begin{theorem}[Change of variable in limits] Let $f$ be a real function and let $g$ be another function such that
+\begin{theorem}[Change of variable in limits]\label{thm:change-variable-limits} Let $f$ be a real function and let $g$ be another function such that
 \[ \lim_{x \to x_0} g(x) = L. \]
 If the limit
 \[ \lim_{y \to L} f(y) \]
@@ -724,7 +724,7 @@ They also serve as reference points for approximations and asymptotic estimates.
 \subsection{Theorem of the zeros}
 A continuous function on an interval cannot change sign without crossing the value zero.
 This fundamental result is known as the \emph{Theorem of the zeros}.
-\begin{theorem}[Theorem of the zeros] Let $f$ be a real function that is continuous on the closed interval $[a,b]$. If
+\begin{theorem}[Theorem of the zeros]\label{thm:zeros} Let $f$ be a real function that is continuous on the closed interval $[a,b]$. If
 \[ f(a)\cdot f(b) < 0, \]
 that is, if $f(a)$ and $f(b)$ have opposite signs, then there exists at least one point $c \in (a,b)$ such that
 \[ f(c) = 0. \]
@@ -734,7 +734,7 @@ The function cannot ``jump over'' the value zero without violating continuity.
 \subsection{Weierstrass Theorem}
 A continuous function defined on a closed and bounded interval always reaches its largest and smallest values.
 This fundamental result is known as the \emph{Weierstrass Theorem}.
-\begin{theorem}[Weierstrass Theorem] Let $f$ be a real function that is continuous on the closed interval $[a,b]$. Then $f$ is bounded on $[a,b]$, and there exist points
+\begin{theorem}[Weierstrass Theorem]\label{thm:weierstrass} Let $f$ be a real function that is continuous on the closed interval $[a,b]$. Then $f$ is bounded on $[a,b]$, and there exist points
 \[ x_{\min},\; x_{\max} \in [a,b] \]
 such that
 \[ f(x_{\min}) = \min_{x \in [a,b]} f(x), \qquad f(x_{\max}) = \max_{x \in [a,b]} f(x). \]
@@ -745,7 +745,7 @@ The compactness of the interval ensures both boundedness and the existence of ma
 A continuous function on an interval cannot ``skip'' values.
 If it takes two different values at the endpoints of an interval, then it must take every value in between.
 This fundamental result is known as the \emph{Intermediate Value Theorem}.
-\begin{theorem}[Intermediate Value Theorem] Let $f$ be a real function that is continuous on the closed interval $[a,b]$. Let $L$ be any real number between $f(a)$ and $f(b)$, that is,
+\begin{theorem}[Intermediate Value Theorem]\label{thm:intermediate-value} Let $f$ be a real function that is continuous on the closed interval $[a,b]$. Let $L$ be any real number between $f(a)$ and $f(b)$, that is,
 \[ f(a) < L < f(b) \quad \text{or} \quad f(b) < L < f(a). \]
 Then there exists at least one point $c \in (a,b)$ such that
 \[ f(c) = L. \]
@@ -755,7 +755,7 @@ The function cannot jump over any value without violating continuity.
 \subsection{Existence and uniqueness of the \texorpdfstring{$n$}{n}th root}
 The $n$th root of a positive real number is well defined and unique.
 This fundamental property ensures that the equation $x^n = y$ has exactly one positive solution.
-\begin{theorem}[Existence and uniqueness of the $n$th root] For every real number $y>0$ and every integer $n \ge 1$, there exists one and only one real number $x>0$ such that
+\begin{theorem}[Existence and uniqueness of the $n$th root]\label{thm:nth-root} For every real number $y>0$ and every integer $n \ge 1$, there exists one and only one real number $x>0$ such that
 \[ x^n = y. \]
 This number is called the $n$th root of $y$ and is denoted by $\sqrt[n]{y}$. \end{theorem}
 In other words, the function $x \mapsto x^n$ is continuous and strictly increasing on $(0,+\infty)$, and therefore it admits a unique inverse on this interval.
@@ -763,7 +763,7 @@ This inverse function assigns to each positive $y$ its unique positive $n$th roo
 \subsection{Monotonicity theorem for functions}
 A monotone function on an interval has well-defined one-sided limits at every point of the interval.
 Inside the interval these limits are finite, while at the endpoints they may be finite or infinite.
-\begin{theorem}[Monotonicity theorem] Let $f$ be a real function that is monotone (increasing or decreasing) on the interval $[a,b]$.
+\begin{theorem}[Monotonicity theorem]\label{thm:monotonicity} Let $f$ be a real function that is monotone (increasing or decreasing) on the interval $[a,b]$.
 \begin{itemize}
 \item For every point $x_0 \in (a,b)$, both one-sided limits
 \[
@@ -845,7 +845,7 @@ A point where the concavity changes sign is called an \emph{inflection point}. T
 \subsection*{Continuity and differentiability}
 Differentiability is a stronger property than continuity.
 A function may be continuous without being differentiable, but every differentiable function is necessarily continuous.
-\begin{theorem}[Differentiability implies continuity] Let $f$ be a function defined on an interval and let $x_0$ be a point in its domain.
+\begin{theorem}[Differentiability implies continuity]\label{thm:differentiability-continuity} Let $f$ be a function defined on an interval and let $x_0$ be a point in its domain.
 If $f$ is differentiable at $x_0$, then $f$ is continuous at $x_0$. \end{theorem}
 \subsection*{Continuity without differentiability}
 The converse is false: continuity does not imply differentiability.
@@ -863,7 +863,7 @@ Typical examples include: \begin{itemize}
 Let $f$ be a real function defined on an interval.
 When $f$ is strictly monotonic, it is invertible, and its inverse function $f^{-1}$ is also defined on an interval.
 The derivative of the inverse is determined by the derivative of $f$.
-\begin{theorem}[Derivative of the inverse function] Let $f$ be a continuous and strictly monotonic function on an interval, and assume that $f$ is differentiable at a point $x_0$ with
+\begin{theorem}[Derivative of the inverse function]\label{thm:derivative-inverse} Let $f$ be a continuous and strictly monotonic function on an interval, and assume that $f$ is differentiable at a point $x_0$ with
 \[ f'(x_0) \neq 0. \]
 Then the inverse function $f^{-1}$ is differentiable at $y_0 = f(x_0)$, and its derivative is
 \[ (f^{-1})'(y_0) = \frac{1}{f'(x_0)}. \]
@@ -882,7 +882,7 @@ in agreement with the theorem.
 \subsection{Fermat's theorem}
 Critical points of a function occur where the derivative is zero or does not exist.
 Fermat's theorem gives a necessary condition for a local extremum when the derivative exists.
-\begin{theorem}[Fermat's theorem] Let $f$ be a real function defined on an interval, and let $x_0$ be an interior point of the interval.
+\begin{theorem}[Fermat's theorem]\label{thm:fermat} Let $f$ be a real function defined on an interval, and let $x_0$ be an interior point of the interval.
 If $f$ has a local maximum or a local minimum at $x_0$ and $f$ is differentiable at $x_0$, then
 \[ f'(x_0) = 0. \]
 \end{theorem}
@@ -903,7 +903,7 @@ This illustrates that $f'(x_0)=0$ is a necessary but not sufficient condition fo
 \subsection{Mean Value Theorem (Lagrange's theorem)}
 The Mean Value Theorem is one of the fundamental results of differential calculus.
 It states that for every sufficiently regular function, there exists a point where the instantaneous rate of change equals the average rate of change over an interval.
-\begin{theorem}[Mean Value Theorem] Let $f$ be a real function that is continuous on the closed interval $[a,b]$ and differentiable on the open interval $(a,b)$, with $a<b$.
+\begin{theorem}[Mean Value Theorem]\label{thm:mean-value} Let $f$ be a real function that is continuous on the closed interval $[a,b]$ and differentiable on the open interval $(a,b)$, with $a<b$.
 Then there exists at least one point $c\in(a,b)$ such that
 \[ f'(c) = \frac{f(b)-f(a)}{b-a}. \]
 \end{theorem}
@@ -925,7 +925,7 @@ Since $f'(x)=2x$, the equation $2c=4$ gives $c=2$, which lies in $(1,3)$, as gua
 \subsection{Monotonicity test}
 The derivative provides a precise criterion to determine whether a function is increasing or decreasing on an interval.
 This result is known as the \emph{monotonicity test}.
-\begin{theorem}[Monotonicity test] Let $f$ be a real function that is continuous on a closed interval $[a,b]$ and differentiable on the open interval $(a,b)$. \begin{itemize}
+\begin{theorem}[Monotonicity test]\label{thm:monotonicity-test} Let $f$ be a real function that is continuous on a closed interval $[a,b]$ and differentiable on the open interval $(a,b)$. \begin{itemize}
 \item If $f'(x) > 0$ for all $x \in (a,b)$, then $f$ is strictly increasing on $[a,b]$.
 \item If $f'(x) < 0$ for all $x \in (a,b)$, then $f$ is strictly decreasing on $[a,b]$.
 \item If $f'(x) = 0$ for all $x \in (a,b)$, then $f$ is constant on $[a,b]$. \end{itemize} \end{theorem}
@@ -940,7 +940,7 @@ The derivative is never negative, and equals $0$ only at $x=0$.
 Thus $f$ is increasing on every interval, even though the slope is horizontal at the origin.
 \subsection{L'Hospital's rule}
 L'Hospital's rule is a fundamental tool for evaluating limits that produce indeterminate forms of type $\frac{0}{0}$ or $\frac{\infty}{\infty}$.
-\begin{theorem}[L'Hospital's rule] Let $f$ and $g$ be real functions differentiable on an open interval $(a,b)$, and suppose that
+\begin{theorem}[L'Hospital's rule]\label{thm:lhospital} Let $f$ and $g$ be real functions differentiable on an open interval $(a,b)$, and suppose that
 \[ \lim_{x\to c} f(x) = 0, \qquad \lim_{x\to c} g(x) = 0, \]
 or
 \[ \lim_{x\to c} f(x) = \pm\infty, \qquad \lim_{x\to c} g(x) = \pm\infty, \]
@@ -969,7 +969,7 @@ Applying L'Hospital's rule repeatedly,
 so the limit is $+\infty$.
 \subsection{Limit of the derivative and one-sided differentiability}
 The behaviour of the derivative near an endpoint determines whether the one-sided derivative exists at that endpoint.
-\begin{theorem}[One-sided derivative from the limit of the derivative] Let $f$ be a real function defined on the interval $[a,b)$, with $b$ possibly $+\infty$.
+\begin{theorem}[One-sided derivative from the limit of the derivative]\label{thm:one-sided-derivative} Let $f$ be a real function defined on the interval $[a,b)$, with $b$ possibly $+\infty$.
 Assume that: \begin{itemize}
 \item $f$ is continuous at $a$;
 \item $f$ is differentiable on $(a,b)$;
@@ -995,7 +995,7 @@ If the derivative $f'$ is differentiable, the \emph{second derivative} of $f$ is
 \subsection{Continuity of convex and concave functions}
 Convexity and concavity impose strong regularity conditions on a function.
 In particular, a convex or concave function cannot have interior discontinuities.
-\begin{theorem}[Continuity of convex and concave functions] Let $f$ be a real function defined on an interval $I$ (open, closed, or half-open).
+\begin{theorem}[Continuity of convex and concave functions]\label{thm:continuity-convex} Let $f$ be a real function defined on an interval $I$ (open, closed, or half-open).
 If $f$ is convex or concave on $I$, then $f$ is continuous at every interior point of $I$.
 Possible discontinuities may occur only at the endpoints of $I$. \end{theorem}
 \subsection*{Interpretation}
@@ -1009,7 +1009,7 @@ Convexity and concavity therefore guarantee: \begin{itemize}
 \subsection{Convexity and derivatives}
 Convexity can be characterized through the behaviour of the derivative.
 A convex function has a non-decreasing derivative; a concave function has a non-increasing derivative.
-\begin{theorem}[Convexity and derivatives] Let $f$ be a real function defined on an interval $I$ and differentiable on the interior of $I$. \begin{itemize}
+\begin{theorem}[Convexity and derivatives]\label{thm:convexity-derivatives} Let $f$ be a real function defined on an interval $I$ and differentiable on the interior of $I$. \begin{itemize}
 \item $f$ is convex on $I$ if and only if its derivative $f'$ is non-decreasing on $I$.
 \item $f$ is concave on $I$ if and only if its derivative $f'$ is non-increasing on $I$. \end{itemize} If $f$ is twice differentiable, these conditions are equivalent to: \begin{itemize}
 \item $f''(x) \ge 0$ for all $x$ in $I$
@@ -1019,7 +1019,7 @@ A convex function has a non-decreasing derivative; a concave function has a non-
 \subsection{Convexity and tangent lines}
 Convexity has a clear geometric interpretation in terms of tangent lines.
 For a convex function, every tangent line lies below the graph; for a concave function, every tangent line lies above it.
-\begin{theorem}[Convexity and tangent lines] Let $f$ be a real function defined on an interval $I$ and differentiable on the interior of $I$. \begin{itemize}
+\begin{theorem}[Convexity and tangent lines]\label{thm:convexity-tangent} Let $f$ be a real function defined on an interval $I$ and differentiable on the interior of $I$. \begin{itemize}
 \item If $f$ is convex on $I$, then for every $x_0 \in I$ and every $x \in I$,
 \[
 f(x) \ge f(x_0) + f'(x_0)(x - x_0).
@@ -1033,7 +1033,7 @@ That is, the tangent line at $x_0$ lies above the graph of $f$. \end{itemize} \e
 \subsection{Inflection points and the second derivative}
 An inflection point is a point where the graph of a function changes concavity.
 The second derivative provides a useful criterion for detecting such points.
-\begin{theorem}[Inflection point and second derivative] Let $f$ be a real function defined on an interval and twice differentiable on the interior of the interval.
+\begin{theorem}[Inflection point and second derivative]\label{thm:inflection-second-derivative} Let $f$ be a real function defined on an interval and twice differentiable on the interior of the interval.
 If $x_0$ is an inflection point of $f$, then the concavity changes sign at $x_0$, and therefore
 \[ f''(x_0) = 0 \]
 or the second derivative does not exist at $x_0$.
@@ -1041,7 +1041,7 @@ Conversely, if $f''(x_0)=0$ and the second derivative changes sign when passing 
 \subsection{Inflection point and tangent line}
 An inflection point is a point where the function changes concavity.
 A key geometric property is that the tangent line at such a point intersects (or is crossed by) the graph.
-\begin{theorem}[The tangent line at an inflection point] Let $f$ be a real function defined on an interval and differentiable at a point $x_0$.
+\begin{theorem}[The tangent line at an inflection point]\label{thm:tangent-inflection} Let $f$ be a real function defined on an interval and differentiable at a point $x_0$.
 If $x_0$ is an inflection point of $f$, then the tangent line at $x_0$
 \[ T(x) = f(x_0) + f'(x_0)(x - x_0) \]
 is crossed by the graph of $f$ at $x_0$.
@@ -1072,7 +1072,7 @@ meaning that the differential gives the best linear approximation, and the littl
 \subsection{Taylor--Maclaurin formula with Peano remainder}\label{sec:taylor-peano}
 The Taylor expansion expresses a function as a polynomial plus an error term that becomes negligible at small scales.
 The Peano remainder gives a very compact way to describe this error.
-\begin{theorem}[Taylor formula with Peano remainder] Let $f$ be a real function that is $n$ times differentiable at a point $x_0$.
+\begin{theorem}[Taylor formula with Peano remainder]\label{thm:taylor-peano} Let $f$ be a real function that is $n$ times differentiable at a point $x_0$.
 Then, as $x \to x_0$,
 \[\boxed{ f(x) = f(x_0)
 + f'(x_0)(x - x_0)
@@ -1092,7 +1092,7 @@ If $x_0 = 0$, this becomes the Maclaurin expansion:
 \subsection{Taylor formula with Lagrange remainder}
 The Taylor expansion expresses a function as a polynomial plus a remainder term that depends on a derivative evaluated at an intermediate point.
 The Lagrange form of the remainder gives an explicit bound on the error.
-\begin{theorem}[Taylor formula with Lagrange remainder] Let $f$ be a real function that is $(n+1)$ times differentiable on an open interval containing $x_0$ and $x$.
+\begin{theorem}[Taylor formula with Lagrange remainder]\label{thm:taylor-lagrange} Let $f$ be a real function that is $(n+1)$ times differentiable on an open interval containing $x_0$ and $x$.
 Then there exists a point $\xi$ between $x_0$ and $x$ such that
 \[ f(x) = f(x_0)
 + f'(x_0)(x - x_0)
@@ -1201,7 +1201,7 @@ When $|q|<1$ the partial sums converge to a finite limit, so the series converge
 \[ \sum_{n=0}^{\infty} a_0\, q^n = \frac{a_0}{1-q}. \]
 For $|q|\ge 1$ (with $a_0\neq 0$) the series diverges.
 \subsection{Necessary condition for convergence}
-\begin{theorem}[Necessary condition for convergence] If the series
+\begin{theorem}[Necessary condition for convergence]\label{thm:necessary-convergence} If the series
 \[ \sum_{n=0}^{\infty} a_n \]
 converges, then its general term tends to zero:
 \[ \lim_{n\to\infty} a_n = 0. \]
@@ -1218,7 +1218,7 @@ be a convergent series with sum $S$ and partial sums $S_N$.
 For every $N\ge 0$, the \emph{remainder} (or \emph{tail}) of the series is
 \[ R_N = S - S_N = \sum_{n=N+1}^{\infty} a_n. \]
 The absolute value $|R_N|$ is the \emph{error} made when the sum $S$ of the whole series is approximated by the partial sum $S_N$. \end{definition}
-\begin{theorem}[The remainder of a convergent series tends to zero] If the series $\sum_{n=0}^{\infty} a_n$ converges, then its remainder $R_N$ tends to zero:
+\begin{theorem}[The remainder of a convergent series tends to zero]\label{thm:remainder-zero} If the series $\sum_{n=0}^{\infty} a_n$ converges, then its remainder $R_N$ tends to zero:
 \[ \lim_{N\to\infty} R_N = 0. \]
 \end{theorem}
 The remainder measures what is left of the sum after the first $N+1$ terms.
@@ -1231,7 +1231,7 @@ The \emph{generalized harmonic series} (also called the \emph{$p$-series}) is th
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p}, \]
 where $p\in\mathbb{R}$ is a fixed exponent.
 For $p=1$ it reduces to the harmonic series.
-\begin{theorem}[Convergence of the generalized harmonic series] The generalized harmonic series
+\begin{theorem}[Convergence of the generalized harmonic series]\label{thm:generalized-harmonic} The generalized harmonic series
 \[ \sum_{n=1}^{\infty} \frac{1}{n^p} \]
 converges if and only if $p>1$.
 For $p\le 1$ the series diverges. \end{theorem}
@@ -1255,7 +1255,7 @@ The \emph{root test} (also called \emph{Cauchy's root test}) decides the behavio
 \begin{definition}[Root test] Let $\sum a_n$ be a series with eventually non-negative terms, and let
 \[ \ell = \limsup_{n\to\infty} \sqrt[n]{a_n} \]
 be the upper limit of the sequence of the $n$-th roots of $a_n$. \end{definition}
-\begin{theorem}[Root test] With the notation above,
+\begin{theorem}[Root test]\label{thm:root-test} With the notation above,
 \begin{enumerate} \item if $\ell<1$, the series \emph{converges}; \item if $\ell>1$, the series \emph{diverges}; \item if $\ell=1$, the test is \emph{inconclusive}: the series may converge or diverge. \end{enumerate} \end{theorem}
 \emph{Proof idea.}
 If $\ell<1$, choose a number $r$ with $\ell<r<1$.
@@ -1266,7 +1266,7 @@ If $\ell>1$, then $\sqrt[n]{a_n}\ge 1$ infinitely often, so $a_n\ge 1$ infinitel
 The case $\ell=1$ is inconclusive: for example, the harmonic series $\sum \frac1n$ diverges and the generalized harmonic series $\sum \frac1{n^2}$ converges, yet in both cases $\ell=1$.
 \subsubsection{Ratio test}\label{sec:ratio-test}
 The \emph{ratio test} (also called \emph{d'Alembert's ratio test}) studies the behaviour of a series with eventually positive terms by looking at the ratio between consecutive terms.
-\begin{theorem}[Ratio test] Let $\sum a_n$ be a series with $a_n>0$ eventually, and suppose that the following limit exists (finite or infinite):
+\begin{theorem}[Ratio test]\label{thm:ratio-test-series} Let $\sum a_n$ be a series with $a_n>0$ eventually, and suppose that the following limit exists (finite or infinite):
 \[ \ell = \lim_{n\to\infty} \frac{a_{n+1}}{a_n}. \]
 \begin{enumerate} \item if $\ell<1$, the series \emph{converges}; \item if $\ell>1$, the series \emph{diverges}; \item if $\ell=1$, the test is \emph{inconclusive}: the series may converge or diverge. \end{enumerate} \end{theorem}
 The ratio test is particularly effective when the general term is a product, a factorial, or an exponential, since then the ratio simplifies to a constant.
@@ -1282,7 +1282,7 @@ If $\ell>1$, then eventually $a_{n+1}>a_n$, so the general term does not tend to
 The case $\ell=1$ is inconclusive: for example, the harmonic series $\sum \frac1n$ diverges and the generalized harmonic series $\sum \frac1{n^2}$ converges, yet in both cases $\ell=1$.
 \subsubsection{Comparison test}
 The \emph{comparison test} determines the behaviour of a series with non-negative terms by comparing it with another series whose behaviour is known.
-\begin{theorem}[Direct comparison test] Let $\sum a_n$ and $\sum b_n$ be two series such that eventually
+\begin{theorem}[Direct comparison test]\label{thm:direct-comparison} Let $\sum a_n$ and $\sum b_n$ be two series such that eventually
 \[ 0 \le a_n \le b_n. \]
 \begin{enumerate} \item If $\sum b_n$ converges, then $\sum a_n$ converges. \item If $\sum a_n$ diverges, then $\sum b_n$ diverges. \end{enumerate} \end{theorem}
 The direct comparison test applies verbatim to the series considered in this subsection, whose terms are eventually non-negative.
@@ -1291,7 +1291,7 @@ For a series with eventually positive or non-positive terms, the same test appli
 For non-negative terms, the partial sums are increasing.
 If $\sum b_n$ converges, then $S_N = \sum_{n=0}^{N} a_n \le \sum_{n=0}^{N} b_n \le \sum_{n=0}^{\infty} b_n$, so $(S_N)$ is increasing and bounded above, hence convergent.
 The second statement is the contrapositive of the first.
-\begin{theorem}[Limit comparison test] Let $\sum a_n$ and $\sum b_n$ be two series with positive terms, and suppose that the limit
+\begin{theorem}[Limit comparison test]\label{thm:limit-comparison} Let $\sum a_n$ and $\sum b_n$ be two series with positive terms, and suppose that the limit
 \[ L = \lim_{n\to\infty} \frac{a_n}{b_n} \]
 exists.
 If $0<L<\infty$, then $\sum a_n$ and $\sum b_n$ either both converge or both diverge.
@@ -1315,7 +1315,7 @@ is said to \emph{converge absolutely} if the series of the absolute values conve
 \[ \sum_{n=0}^{\infty} |a_n| \text{ converges}. \]
 If $\sum a_n$ converges but $\sum |a_n|$ diverges, the series is said to \emph{converge conditionally}. \end{definition}
 Absolute convergence is a stronger property than convergence: it imposes a condition not only on the sum of the terms, but on the sum of their absolute values.
-\begin{theorem}[Absolute convergence implies convergence] If the series
+\begin{theorem}[Absolute convergence implies convergence]\label{thm:absolute-convergence} If the series
 \[ \sum_{n=0}^{\infty} a_n \]
 converges absolutely, then it converges:
 \[ \sum_{n=0}^{\infty} |a_n| \text{ converges } \quad\Longrightarrow\quad \sum_{n=0}^{\infty} a_n \text{ converges}. \]
@@ -1330,7 +1330,7 @@ which converges (by Leibniz's criterion) but does not converge absolutely, since
 \emph{Leibniz's criterion} (also called the \emph{alternating series test}) deals with alternating series, i.e. series of the form
 \[ \sum_{n=0}^{\infty} (-1)^n a_n, \]
 where the terms $a_n$ are eventually non-negative.
-\begin{theorem}[Leibniz's criterion] Let $(a_n)$ be a sequence of real numbers eventually non-negative.
+\begin{theorem}[Leibniz's criterion]\label{thm:leibniz} Let $(a_n)$ be a sequence of real numbers eventually non-negative.
 If $(a_n)$ is eventually decreasing and
 \[ \lim_{n\to\infty} a_n = 0, \]
 then the alternating series
@@ -1351,7 +1351,7 @@ Leibniz's criterion justifies the convergence of the alternating harmonic series
 \emph{Dirichlet's criterion} (or \emph{Dirichlet's test}) is a convergence test for series of the form
 \[ \sum_{n=0}^{\infty} a_n b_n, \]
 where the sequence $(a_n)$ is monotone and tends to zero, and the partial sums of $(b_n)$ are bounded. It generalizes Leibniz's criterion, which corresponds to the choice $b_n = (-1)^n$.
-\begin{theorem}[Dirichlet's criterion] Let $(a_n)$ be a real sequence eventually monotone and such that
+\begin{theorem}[Dirichlet's criterion]\label{thm:dirichlet} Let $(a_n)$ be a real sequence eventually monotone and such that
 \[ \lim_{n\to\infty} a_n = 0, \]
 and let $(b_n)$ be a sequence (real or complex) whose partial sums
 \[ B_N = \sum_{n=0}^{N} b_n \]
@@ -1401,25 +1401,25 @@ Continuous functions on a closed interval are Riemann integrable; the same is tr
 \subsection{Classes of integrable functions}
 Riemann integrability is a restrictive property, but three large and practically important classes of functions always satisfy it: continuous functions, monotone functions, and bounded functions with only finitely many points of discontinuity.
 In each case the function is defined on a closed and bounded interval $[a,b]$.
-\begin{theorem}[Continuous functions] If $f$ is continuous on $[a,b]$, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
-\begin{theorem}[Monotone functions] If $f$ is monotone on $[a,b]$, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
-\begin{theorem}[Bounded functions with finitely many discontinuities] If $f$ is bounded on $[a,b]$ and discontinuous at only finitely many points, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
+\begin{theorem}[Continuous functions]\label{thm:continuous-integrable} If $f$ is continuous on $[a,b]$, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
+\begin{theorem}[Monotone functions]\label{thm:monotone-integrable} If $f$ is monotone on $[a,b]$, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
+\begin{theorem}[Bounded functions with finitely many discontinuities]\label{thm:finite-discontinuities} If $f$ is bounded on $[a,b]$ and discontinuous at only finitely many points, then $f$ is Riemann integrable on $[a,b]$. \end{theorem}
 These conditions are sufficient but not necessary: the class of Riemann integrable functions is strictly larger, and it includes in particular every bounded function whose set of discontinuity points has negligible measure. Continuous, monotone and piecewise-continuous functions all admit an integral.
 \subsection{Mean value theorem for integrals}
 The definite integral measures the accumulation of a quantity over an interval.
 By the average value, the integral can be read back as a kind of ``mean height'' of the function: the mean value theorem for integrals makes this interpretation precise under continuity.
-\begin{theorem}[Mean value theorem for integrals] Let $f$ be continuous on $[a,b]$.
+\begin{theorem}[Mean value theorem for integrals]\label{thm:mean-integral} Let $f$ be continuous on $[a,b]$.
 Then there exists a point $c\in[a,b]$ such that \[ \int_a^b f(x)\,dx = f(c)\,(b-a). \] \end{theorem}
 Dividing by $b-a$, the point $c$ realises the \emph{average value} of $f$ on $[a,b]$: \[ f(c) = \frac{1}{b-a}\int_a^b f(x)\,dx. \] The area under the graph of $f$ is therefore equal to the area of the rectangle with base $b-a$ and height $f(c)$.
 When a weighted average is needed, the following generalisation is used.
-\begin{theorem}[Generalised mean value theorem for integrals] Let $f$ be continuous on $[a,b]$ and let $g$ be Riemann integrable on $[a,b]$ and of constant sign on $[a,b]$.
+\begin{theorem}[Generalised mean value theorem for integrals]\label{thm:generalized-mean-integral} Let $f$ be continuous on $[a,b]$ and let $g$ be Riemann integrable on $[a,b]$ and of constant sign on $[a,b]$.
 Then there exists a point $c\in[a,b]$ such that \[ \int_a^b f(x)\,g(x)\,dx = f(c)\int_a^b g(x)\,dx. \] \end{theorem}
 With $g\equiv 1$ the generalised statement reduces to the mean value theorem for integrals above.
 \subsection{Fundamental theorem of calculus}
 The fundamental theorem of calculus connects the two operations that define calculus: differentiation and integration.
 It states, in two complementary parts, that integration and differentiation are inverse operations: the derivative of an integral returns the original function, and the integral of a derivative measures the total increment of a function.
 To state the first part, consider the \emph{area function} of a continuous function $f$: the integral of $f$ from a fixed point $a$ to a variable point $x$, \[ F(x) = \int_a^x f(t)\,dt. \] As $x$ varies, $F(x)$ measures how much area has been accumulated between $a$ and $x$.
-\begin{theorem}[Fundamental theorem of calculus, part I] Let $f$ be continuous on $[a,b]$, and let \[ F(x) = \int_a^x f(t)\,dt, \qquad x\in[a,b]. \] Then $F$ is differentiable on $[a,b]$ and \[ F'(x) = f(x). \] \end{theorem}
+\begin{theorem}[Fundamental theorem of calculus, part I]\label{thm:ftc-one} Let $f$ be continuous on $[a,b]$, and let \[ F(x) = \int_a^x f(t)\,dt, \qquad x\in[a,b]. \] Then $F$ is differentiable on $[a,b]$ and \[ F'(x) = f(x). \] \end{theorem}
 Thus the area function $F$ is an antiderivative of $f$: differentiating the integral gives back the original function.
 In particular, every continuous function admits an antiderivative, even if no elementary formula for it is known.
 The first part reconstructs an antiderivative from an integral; the complementary second part reconstructs an integral from an antiderivative.
@@ -1487,7 +1487,7 @@ $h$ and height equal to the value of $f$ at the midpoint of each subinterval.
 The method is exact for affine functions, since the midpoint of an interval
 gives the correct average height of any line.
 
-\begin{theorem}[Error of the midpoint rule]
+\begin{theorem}[Error of the midpoint rule]\label{thm:midpoint-error}
 If $f$ has a continuous second derivative on $[a,b]$, then there exists a
 point $\xi\in(a,b)$ such that
 \[
@@ -1571,7 +1571,7 @@ integrand with a function whose integral is known.  The reference function
 is the power $x^{-\alpha}$, whose behaviour near the singularity governs the
 integral.
 
-\begin{theorem}[Convergence of the power integral]
+\begin{theorem}[Convergence of the power integral]\label{thm:power-integral}
 Let $c\in\mathbb{R}$ and $\alpha>0$.  The generalized integral of the power
 function near the singularity $c$,
 \[
@@ -1583,7 +1583,7 @@ converges if and only if $\alpha<1$.
 
 This single result yields two practical criteria.
 
-\begin{theorem}[Comparison criterion]
+\begin{theorem}[Comparison criterion]\label{thm:comparison-integral}
 Let $f$ and $g$ be such that the generalized integrals over $[a,b)$ of $f$
 and $g$ near the same singular endpoint $b$ are being studied, and let
 \[
@@ -1593,7 +1593,7 @@ If the integral of $g$ converges, then the integral of $f$ converges; if the
 integral of $f$ diverges, then the integral of $g$ diverges.
 \end{theorem}
 
-\begin{theorem}[Asymptotic comparison criterion]
+\begin{theorem}[Asymptotic comparison criterion]\label{thm:asymptotic-comparison-integral}
 Let $f$ and $g$ have constant sign near the singular endpoint $b$, and assume
 that the limit
 \[
@@ -1659,7 +1659,7 @@ decided by the same comparison strategy used for finite singularities: the
 integrand is compared with a power of $x$, whose integral at infinity is
 known.
 
-\begin{theorem}[Integrability at infinity of the power]
+\begin{theorem}[Integrability at infinity of the power]\label{thm:power-infinity}
 Let $a>0$.  The generalized integral of the power function at infinity,
 \[
 \int_a^{\infty} \frac{dx}{x^{\alpha}},
@@ -1668,7 +1668,7 @@ Let $a>0$.  The generalized integral of the power function at infinity,
 converges if and only if $\alpha>1$.
 \end{theorem}
 
-\begin{theorem}[Comparison criterion at infinity]
+\begin{theorem}[Comparison criterion at infinity]\label{thm:comparison-infinity}
 Let $f$ and $g$ be integrable on every closed subinterval of $[a,\infty)$, and
 let
 \[
@@ -1678,7 +1678,7 @@ If $\int_a^{\infty} g$ converges, then $\int_a^{\infty} f$ converges; if
 $\int_a^{\infty} f$ diverges, then $\int_a^{\infty} g$ diverges.
 \end{theorem}
 
-\begin{theorem}[Asymptotic comparison criterion at infinity]
+\begin{theorem}[Asymptotic comparison criterion at infinity]\label{thm:asymptotic-comparison-infinity}
 Let $f$ and $g$ have constant sign for $x$ large, and assume that the limit
 \[
 \ell = \lim_{x\to\infty}\frac{f(x)}{g(x)}
@@ -1705,7 +1705,7 @@ The variable $t$ is a \emph{dummy variable}: it is bound by the integral sign an
 The initial point $x_0$ fixes where the accumulation starts: every integral function satisfies $F(x_0)=0$, and two integral functions of the same $f$ with initial points $x_0$ and $x_1$ differ by the constant $\int_{x_1}^{x_0} f(t)\,dt$, in accordance with the additivity of the integral.
 If $f$ is merely Riemann integrable, its integral function is well defined and continuous on $[a,b]$; if in addition $|f|\le M$, then $|F(x)-F(y)|\le M\,|x-y|$ for all $x,y\in[a,b]$, so $F$ is even Lipschitz.
 When $f$ is continuous, the fundamental theorem of calculus, part I, describes the differential behaviour completely.
-\begin{theorem}[Differential properties of the integral function] Let $f$ be continuous on $[a,b]$, and let $F$ be the integral function of $f$ with initial point $x_0$.
+\begin{theorem}[Differential properties of the integral function]\label{thm:differential-integral} Let $f$ be continuous on $[a,b]$, and let $F$ be the integral function of $f$ with initial point $x_0$.
 Then $F$ is differentiable on $[a,b]$ and \[ F'(x) = f(x), \qquad x\in[a,b]. \] Consequently $F$ is the unique primitive of $f$ that vanishes at $x_0$.
 Moreover, $F$ is increasing on every subinterval where $f\ge 0$ and decreasing on every subinterval where $f\le 0$, and its graph has horizontal tangent at the zeros of $f$. \end{theorem}
 The construction produces the elementary functions themselves: for $x>0$ the natural logarithm is the integral function of $1/t$ with initial point $1$, \[ \ln x = \int_1^x \frac{dt}{t}, \] and the arctangent is the integral function of $1/(1+t^2)$ with initial point $0$, \[ \arctan x = \int_0^x \frac{dt}{1+t^2}. \]
@@ -1713,7 +1713,7 @@ When no elementary primitive exists, the integral function is the very definitio
 
 \subsection{The second fundamental theorem of calculus}
 The \emph{second fundamental theorem of calculus}, also known as \emph{Torricelli's theorem} or the \emph{Newton--Leibniz formula}, evaluates a definite integral by means of any primitive of the integrand, without passing to the limit of Cauchy--Riemann sums.
-\begin{theorem}[Second fundamental theorem of calculus] Let $f$ be continuous on $[a,b]$, and let $F$ be any antiderivative of $f$ on $[a,b]$, so that $F'=f$.
+\begin{theorem}[Second fundamental theorem of calculus]\label{thm:ftc-two} Let $f$ be continuous on $[a,b]$, and let $F$ be any antiderivative of $f$ on $[a,b]$, so that $F'=f$.
 Then \[ \int_a^b f(x)\,dx = F(b) - F(a). \] \end{theorem}
 The difference $F(b)-F(a)$ records the total change of $F$ over $[a,b]$; it is often written with the evaluation notation \[ \Bigl[ F(x) \Bigr]_a^b = F(b)-F(a). \]
 Any primitive may be used: if $F_1$ and $F_2$ are both primitives of $f$ on $[a,b]$, then they differ by a constant, and the quantity $F(b)-F(a)$ is the same for both.
@@ -1734,7 +1734,7 @@ taken whenever the integral converges. \end{definition}
 
 In the formula the second factor is \emph{reflected} and translated: as $t$ runs from $0$ to $x$, the point $x-t$ runs backwards from $x$ to $0$, so $(f*g)(x)$ re-reads the past values of $g$ and weights them with the values of $f$.
 
-\begin{theorem}[Properties of the convolution] Let $f$ and $g$ be continuous on $[0,+\infty)$.  Then $f*g$ exists for every $x\ge 0$ and is continuous on $[0,+\infty)$.  The convolution is commutative, $f*g=g*f$; distributive over sums, $f*(g_1+g_2)=f*g_1+f*g_2$; homogeneous, $f*(\alpha g)=\alpha\,(f*g)$; and associative, $(f*g)*h=f*(g*h)$.  If $g$ is differentiable with continuous derivative, then $f*g$ is differentiable and
+\begin{theorem}[Properties of the convolution]\label{thm:convolution} Let $f$ and $g$ be continuous on $[0,+\infty)$.  Then $f*g$ exists for every $x\ge 0$ and is continuous on $[0,+\infty)$.  The convolution is commutative, $f*g=g*f$; distributive over sums, $f*(g_1+g_2)=f*g_1+f*g_2$; homogeneous, $f*(\alpha g)=\alpha\,(f*g)$; and associative, $(f*g)*h=f*(g*h)$.  If $g$ is differentiable with continuous derivative, then $f*g$ is differentiable and
 \[
 (f*g)'(x) = f(x)\,g(0) + \int_0^x f(t)\,g'(x-t)\,dt.
 \] \end{theorem}
@@ -1836,7 +1836,7 @@ is the discrete dynamical model whose evolution law is
 It is the linear evolution law of the previous paragraph with $b=0$ and
 $q=1+r>0$. \end{definition}
 
-\begin{theorem}[Solution of the Malthus model] For every initial value
+\begin{theorem}[Solution of the Malthus model]\label{thm:malthus} For every initial value
 $P_0$, the solution of the Malthus model is
 \[ P_n = P_0\,(1+r)^n \qquad\text{for every } n \ge 0. \]
 \end{theorem}
@@ -2045,7 +2045,7 @@ equilibrium of the equation,
 \[ x^* = \frac{b}{1-q}, \]
 the state that reproduces itself for ever.
 
-\begin{theorem}[Solution of the first-order linear equation] If $q\neq 1$,
+\begin{theorem}[Solution of the first-order linear equation]\label{thm:first-order-linear} If $q\neq 1$,
 the solution of the equation with initial value $x_0$ is
 \[ x_n = x^* + q^n\,(x_0-x^*), \qquad x^* = \frac{b}{1-q}: \]
 the general solution is the sum of the equilibrium and of a geometric
@@ -2129,7 +2129,7 @@ sequence is increasing (similarly for $x_1<x_0$). Hence, if the orbit
 remains in a bounded interval, it converges (\S\ref{sec:limits}), and its limit is a
 fixed point:
 
-\begin{theorem}[Limit of a convergent orbit] Let $f$ be continuous and
+\begin{theorem}[Limit of a convergent orbit]\label{thm:limit-orbit} Let $f$ be continuous and
 let the orbit of $x_0$ converge to a real number $L$. Then $L$ is a fixed
 point: $f(L)=L$.
 \end{theorem}
@@ -2173,7 +2173,7 @@ The roots are real and distinct when $a^2+4c>0$, coincident when
 $a^2+4c=0$, complex conjugates when $a^2+4c<0$: the three cases give the
 three forms of the general solution.
 
-\begin{theorem}[Distinct real roots] Suppose that the characteristic
+\begin{theorem}[Distinct real roots]\label{thm:distinct-real-roots} Suppose that the characteristic
 equation has two distinct real roots $\lambda_1\neq\lambda_2$. Then the
 general solution of the homogeneous equation is
 \[ x_n = c_1\,\lambda_1^n+c_2\,\lambda_2^n, \]
@@ -2192,7 +2192,7 @@ $c_1\lambda_1^n+c_2\lambda_2^n$ is a solution with the same first two
 values as $(x_n)$, and the recursion determines all the others: the two
 solutions coincide. \end{proof}
 
-\begin{theorem}[Double root] Suppose that the characteristic equation has
+\begin{theorem}[Double root]\label{thm:double-root} Suppose that the characteristic equation has
 one double root $\lambda$. Then the general solution is
 \[ x_n = (c_1+c_2\,n)\,\lambda^n. \]
 \end{theorem}
@@ -2208,7 +2208,7 @@ The two solutions are not proportional, and their linear combinations
 give all the solutions, by the argument of the previous proof.
 \end{proof}
 
-\begin{theorem}[Complex conjugate roots] Suppose that the characteristic
+\begin{theorem}[Complex conjugate roots]\label{thm:complex-roots} Suppose that the characteristic
 equation has no real roots, and let its roots be the complex conjugates
 $\lambda=\rho(\cos\theta\pm i\sin\theta)$, with $\rho>0$ (\S\ref{sec:complex}). Then the
 real solutions are the linear combinations of
@@ -2262,7 +2262,7 @@ cases are delicate: for $q=-1$ the orbits oscillate with constant
 amplitude around $x^*$ (stable, but not asymptotically), and for $q=1$
 with $b=0$ every state is an equilibrium.
 
-\begin{theorem}[Derivative criterion] Let $x^*$ be an equilibrium of the
+\begin{theorem}[Derivative criterion]\label{thm:derivative-criterion} Let $x^*$ be an equilibrium of the
 autonomous equation $x_{n+1}=f(x_n)$, and let $f$ be differentiable at
 $x^*$. If $|f'(x^*)|<1$, the equilibrium is asymptotically stable; if
 $|f'(x^*)|>1$, it is unstable. If $|f'(x^*)|=1$, the criterion is
@@ -2317,4 +2317,92 @@ asymptotically stable exactly when both roots have modulus smaller than
 $1$, which is what happens in the accelerator model for the parameter
 ranges discussed there.
 
-\end{document}  
+\clearpage
+\phantomsection
+\section*{Summary of Theorems}
+\addcontentsline{toc}{section}{Summary of Theorems}
+The following index collects every theorem stated in these notes. Each title
+links directly to the theorem, and the page number gives its location in the
+printed document.
+
+\subsection*{Preliminaries, limits, and continuity}
+\begin{description}
+\item \hyperref[thm:triangle-inequality]{Triangle inequality} \dotfill p.~\pageref{thm:triangle-inequality}
+\item \hyperref[thm:fundamental-algebra]{Fundamental theorem of algebra} \dotfill p.~\pageref{thm:fundamental-algebra}
+\item \hyperref[thm:squeeze]{Squeeze Theorem} \dotfill p.~\pageref{thm:squeeze}
+\item \hyperref[thm:limit-e]{Limit defining the number $e$} \dotfill p.~\pageref{thm:limit-e}
+\item \hyperref[thm:ratio-test-limits]{Ratio Test for sequences} \dotfill p.~\pageref{thm:ratio-test-limits}
+\item \hyperref[thm:uniqueness-limit]{Uniqueness of the limit} \dotfill p.~\pageref{thm:uniqueness-limit}
+\item \hyperref[thm:existence-limit]{Existence of the limit} \dotfill p.~\pageref{thm:existence-limit}
+\item \hyperref[thm:change-variable-limits]{Change of variable in limits} \dotfill p.~\pageref{thm:change-variable-limits}
+\item \hyperref[thm:zeros]{Theorem of the zeros} \dotfill p.~\pageref{thm:zeros}
+\item \hyperref[thm:weierstrass]{Weierstrass Theorem} \dotfill p.~\pageref{thm:weierstrass}
+\item \hyperref[thm:intermediate-value]{Intermediate Value Theorem} \dotfill p.~\pageref{thm:intermediate-value}
+\item \hyperref[thm:nth-root]{Existence and uniqueness of the $n$th root} \dotfill p.~\pageref{thm:nth-root}
+\item \hyperref[thm:monotonicity]{Monotonicity theorem} \dotfill p.~\pageref{thm:monotonicity}
+\end{description}
+
+\subsection*{Differential calculus}
+\begin{description}
+\item \hyperref[thm:differentiability-continuity]{Differentiability implies continuity} \dotfill p.~\pageref{thm:differentiability-continuity}
+\item \hyperref[thm:derivative-inverse]{Derivative of the inverse function} \dotfill p.~\pageref{thm:derivative-inverse}
+\item \hyperref[thm:fermat]{Fermat's theorem} \dotfill p.~\pageref{thm:fermat}
+\item \hyperref[thm:mean-value]{Mean Value Theorem} \dotfill p.~\pageref{thm:mean-value}
+\item \hyperref[thm:monotonicity-test]{Monotonicity test} \dotfill p.~\pageref{thm:monotonicity-test}
+\item \hyperref[thm:lhospital]{L'Hospital's rule} \dotfill p.~\pageref{thm:lhospital}
+\item \hyperref[thm:one-sided-derivative]{One-sided derivative from the limit of the derivative} \dotfill p.~\pageref{thm:one-sided-derivative}
+\item \hyperref[thm:continuity-convex]{Continuity of convex and concave functions} \dotfill p.~\pageref{thm:continuity-convex}
+\item \hyperref[thm:convexity-derivatives]{Convexity and derivatives} \dotfill p.~\pageref{thm:convexity-derivatives}
+\item \hyperref[thm:convexity-tangent]{Convexity and tangent lines} \dotfill p.~\pageref{thm:convexity-tangent}
+\item \hyperref[thm:inflection-second-derivative]{Inflection point and second derivative} \dotfill p.~\pageref{thm:inflection-second-derivative}
+\item \hyperref[thm:tangent-inflection]{The tangent line at an inflection point} \dotfill p.~\pageref{thm:tangent-inflection}
+\item \hyperref[thm:taylor-peano]{Taylor formula with Peano remainder} \dotfill p.~\pageref{thm:taylor-peano}
+\item \hyperref[thm:taylor-lagrange]{Taylor formula with Lagrange remainder} \dotfill p.~\pageref{thm:taylor-lagrange}
+\end{description}
+
+\subsection*{Series}
+\begin{description}
+\item \hyperref[thm:necessary-convergence]{Necessary condition for convergence} \dotfill p.~\pageref{thm:necessary-convergence}
+\item \hyperref[thm:remainder-zero]{The remainder of a convergent series tends to zero} \dotfill p.~\pageref{thm:remainder-zero}
+\item \hyperref[thm:generalized-harmonic]{Convergence of the generalized harmonic series} \dotfill p.~\pageref{thm:generalized-harmonic}
+\item \hyperref[thm:root-test]{Root test} \dotfill p.~\pageref{thm:root-test}
+\item \hyperref[thm:ratio-test-series]{Ratio test for series} \dotfill p.~\pageref{thm:ratio-test-series}
+\item \hyperref[thm:direct-comparison]{Direct comparison test} \dotfill p.~\pageref{thm:direct-comparison}
+\item \hyperref[thm:limit-comparison]{Limit comparison test} \dotfill p.~\pageref{thm:limit-comparison}
+\item \hyperref[thm:absolute-convergence]{Absolute convergence implies convergence} \dotfill p.~\pageref{thm:absolute-convergence}
+\item \hyperref[thm:leibniz]{Leibniz's criterion} \dotfill p.~\pageref{thm:leibniz}
+\item \hyperref[thm:dirichlet]{Dirichlet's criterion} \dotfill p.~\pageref{thm:dirichlet}
+\end{description}
+
+\subsection*{Integral calculus}
+\begin{description}
+\item \hyperref[thm:continuous-integrable]{Continuous functions} \dotfill p.~\pageref{thm:continuous-integrable}
+\item \hyperref[thm:monotone-integrable]{Monotone functions} \dotfill p.~\pageref{thm:monotone-integrable}
+\item \hyperref[thm:finite-discontinuities]{Bounded functions with finitely many discontinuities} \dotfill p.~\pageref{thm:finite-discontinuities}
+\item \hyperref[thm:mean-integral]{Mean value theorem for integrals} \dotfill p.~\pageref{thm:mean-integral}
+\item \hyperref[thm:generalized-mean-integral]{Generalised mean value theorem for integrals} \dotfill p.~\pageref{thm:generalized-mean-integral}
+\item \hyperref[thm:ftc-one]{Fundamental theorem of calculus, part I} \dotfill p.~\pageref{thm:ftc-one}
+\item \hyperref[thm:midpoint-error]{Error of the midpoint rule} \dotfill p.~\pageref{thm:midpoint-error}
+\item \hyperref[thm:power-integral]{Convergence of the power integral} \dotfill p.~\pageref{thm:power-integral}
+\item \hyperref[thm:comparison-integral]{Comparison criterion} \dotfill p.~\pageref{thm:comparison-integral}
+\item \hyperref[thm:asymptotic-comparison-integral]{Asymptotic comparison criterion} \dotfill p.~\pageref{thm:asymptotic-comparison-integral}
+\item \hyperref[thm:power-infinity]{Integrability at infinity of the power} \dotfill p.~\pageref{thm:power-infinity}
+\item \hyperref[thm:comparison-infinity]{Comparison criterion at infinity} \dotfill p.~\pageref{thm:comparison-infinity}
+\item \hyperref[thm:asymptotic-comparison-infinity]{Asymptotic comparison criterion at infinity} \dotfill p.~\pageref{thm:asymptotic-comparison-infinity}
+\item \hyperref[thm:differential-integral]{Differential properties of the integral function} \dotfill p.~\pageref{thm:differential-integral}
+\item \hyperref[thm:ftc-two]{Second fundamental theorem of calculus} \dotfill p.~\pageref{thm:ftc-two}
+\item \hyperref[thm:convolution]{Properties of the convolution} \dotfill p.~\pageref{thm:convolution}
+\end{description}
+
+\subsection*{Discrete dynamical models}
+\begin{description}
+\item \hyperref[thm:malthus]{Solution of the Malthus model} \dotfill p.~\pageref{thm:malthus}
+\item \hyperref[thm:first-order-linear]{Solution of the first-order linear equation} \dotfill p.~\pageref{thm:first-order-linear}
+\item \hyperref[thm:limit-orbit]{Limit of a convergent orbit} \dotfill p.~\pageref{thm:limit-orbit}
+\item \hyperref[thm:distinct-real-roots]{Distinct real roots} \dotfill p.~\pageref{thm:distinct-real-roots}
+\item \hyperref[thm:double-root]{Double root} \dotfill p.~\pageref{thm:double-root}
+\item \hyperref[thm:complex-roots]{Complex conjugate roots} \dotfill p.~\pageref{thm:complex-roots}
+\item \hyperref[thm:derivative-criterion]{Derivative criterion} \dotfill p.~\pageref{thm:derivative-criterion}
+\end{description}
+
+\end{document}

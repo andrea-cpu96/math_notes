@@ -136,3 +136,4 @@
 \contentsline {subsection}{\numberline {14.6}Autonomous non-linear equations}{67}{subsection.14.6}%
 \contentsline {subsection}{\numberline {14.7}Linear second-order equations with constant coefficients}{68}{subsection.14.7}%
 \contentsline {subsection}{\numberline {14.8}Stability of the equilibria}{69}{subsection.14.8}%
+\contentsline {section}{Summary of Theorems}{71}{section*.4}%
